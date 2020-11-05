@@ -5,8 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using HtmlAgilityPack;
 
 namespace Scrap
 {
@@ -19,14 +19,20 @@ namespace Scrap
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<String> mainPageLinks = Scrapper.GetMainPageLinks("https://newyork.craigslist.org/d/computer-gigs/search/cpg");
-            StringBuilder builder = new StringBuilder();
-            for (int i = 0; i < mainPageLinks.Count; i++)
+            String URL = "http://letscode.in/";
+            List<String> lst =  Scrapper.GetMainPageLinks(URL);
+            foreach (var item in lst)
             {
-                builder.Append(mainPageLinks[i] +"\n");
+                MessageBox.Show(item.ToString());
             }
+        }
 
-            richTextBox1.Text = builder.ToString();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HtmlScrapping obj = new HtmlScrapping();
+           richTextBox1.Text =   obj.MoneyControl();
+
+
         }
     }
 }
