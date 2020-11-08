@@ -6,18 +6,18 @@ using System.Web;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
-
+using System.Data.Common;
 
 public class DAL
 {
     
     SqlConnection con = null;
     public static SqlCommand cmd;
-
+    String conString = "";
 
     public DAL()
 	{
-        String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\StockExchange\Scarp\Scrap\Database1.mdf;Integrated Security=True";
+        conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\StockExchange\Scarp\Scrap\Database1.mdf;Integrated Security=True";
         con = new SqlConnection(conString);        
     }
 
@@ -65,7 +65,12 @@ public class DAL
         return res; 
     }
 
-
+    public DataAdapter getAdapter(String query)
+    {
+        var c = new SqlConnection(conString); // Your Connection String here
+        var dataAdapter = new SqlDataAdapter(query, c);
+        return dataAdapter;
+    }
     public SqlDataReader  MyExecuteReader(String query)
     {
         SqlCommand cmd = new SqlCommand(query, con);

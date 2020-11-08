@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "icVchEMyQYHv/XFHHnBw+M4OFeBum4sASMVMEieNSqH8h3kTEqYkIv0a5lnLQvdesf4oykG/aE8NEsmQ250X9Q==",
+  "success": true,
+  "projectFilePath": "E:\\StockExchange\\Scarp\\Scrap\\Scrap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jay\\.nuget\\packages\\csvhelper\\15.0.9\\csvhelper.15.0.9.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\flurl\\2.5.0\\flurl.2.5.0.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\flurl.http\\2.0.0\\flurl.http.2.0.0.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\fsharp.core\\4.0.0.1\\fsharp.core.4.0.0.1.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\htmlagilitypack\\1.11.26\\htmlagilitypack.1.11.26.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\scrapysharp\\2.5.0\\scrapysharp.2.5.0.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\system.runtime.serialization.primitives\\4.3.0\\system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Jay\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

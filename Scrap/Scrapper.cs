@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+#pragma warning disable CS0105 // The using directive for 'System.Collections.Generic' appeared previously in this namespace
 using System.Collections.Generic;
+#pragma warning restore CS0105 // The using directive for 'System.Collections.Generic' appeared previously in this namespace
 using HtmlAgilityPack;
 using ScrapySharp.Extensions;
 using ScrapySharp.Network;

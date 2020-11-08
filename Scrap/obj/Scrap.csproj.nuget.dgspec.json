@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\StockExchange\\Scarp\\Scrap\\Scrap.csproj": {}
+  },
+  "projects": {
+    "E:\\StockExchange\\Scarp\\Scrap\\Scrap.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\StockExchange\\Scarp\\Scrap\\Scrap.csproj",
+        "projectName": "Scrap",
+        "projectPath": "E:\\StockExchange\\Scarp\\Scrap\\Scrap.csproj",
+        "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
+        "outputPath": "E:\\StockExchange\\Scarp\\Scrap\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+                "projectPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.9, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.26, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "ScrapySharp": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "projectName": "YahooFinanceApi2",
+        "projectPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
+        "outputPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.9, )"
+            },
+            "Flurl": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "System.Runtime.Serialization.Primitives": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

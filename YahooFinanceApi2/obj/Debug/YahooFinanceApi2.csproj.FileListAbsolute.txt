@@ -1,0 +1,13 @@
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\YahooFinanceApi2.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\YahooFinanceApi2.pdb
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\CsvHelper.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\Flurl.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\Flurl.Http.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\Newtonsoft.Json.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\System.Runtime.Serialization.Primitives.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\bin\Debug\System.ValueTuple.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CoreCompileInputs.cache
+E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CopyComplete
+E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.dll
+E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.pdb
+E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csprojAssemblyReference.cache
