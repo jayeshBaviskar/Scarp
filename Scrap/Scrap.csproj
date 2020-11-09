@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analysis.cs" />
     <Compile Include="DAL.cs" />
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -90,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RSS.cs" />
     <Compile Include="Scrapper.cs" />
+    <Compile Include="SortableBindingList.cs" />
     <Compile Include="YahooAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>

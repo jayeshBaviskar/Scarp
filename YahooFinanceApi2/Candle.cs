@@ -22,6 +22,6 @@ namespace YahooFinanceApi
         decimal changePercentage;
 
         public decimal Change { get => (Close - Open); }
-        public decimal ChangePercentage { get => Decimal.Round((((Close - Open) * 100) / Open),2); }
+        public decimal ChangePercentage { get => Open==0? 0:Decimal.Round((((Close - Open) * 100) / Open),2); }
     }
 }
