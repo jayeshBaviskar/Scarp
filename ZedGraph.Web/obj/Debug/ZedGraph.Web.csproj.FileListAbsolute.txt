@@ -1,0 +1,9 @@
+E:\StockExchange\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.Web.dll
+E:\StockExchange\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.Web.pdb
+E:\StockExchange\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.dll
+E:\StockExchange\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.pdb
+E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csprojAssemblyReference.cache
+E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CoreCompileInputs.cache
+E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CopyComplete
+E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.dll
+E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.pdb

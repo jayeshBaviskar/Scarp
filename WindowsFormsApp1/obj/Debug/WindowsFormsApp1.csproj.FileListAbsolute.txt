@@ -1,0 +1,9 @@
+E:\StockExchange\Scarp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\StockExchange\Scarp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\StockExchange\Scarp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -1,0 +1,8 @@
+E:\StockExchange\Scarp\ZedGraph\bin\Debug\net45\ZedGraph.dll
+E:\StockExchange\Scarp\ZedGraph\bin\Debug\net45\ZedGraph.pdb
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.csprojAssemblyReference.cache
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.AssemblyInfoInputs.cache
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.AssemblyInfo.cs
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.csproj.CoreCompileInputs.cache
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.dll
+E:\StockExchange\Scarp\ZedGraph\obj\Debug\net45\ZedGraph.pdb

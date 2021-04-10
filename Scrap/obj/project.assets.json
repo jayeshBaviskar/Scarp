@@ -49,6 +49,12 @@
           "lib/net40/FSharp.Core.dll": {}
         }
       },
+      "GitVersionTask/3.6.5": {
+        "type": "package",
+        "build": {
+          "build/dotnet/_._": {}
+        }
+      },
       "HtmlAgilityPack/1.11.26": {
         "type": "package",
         "compile": {
@@ -105,6 +111,20 @@
           "lib/net45/ScrapySharpAsync.dll": {}
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Runtime.Serialization.Primitives/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -131,6 +151,24 @@
           "lib/net461/System.ValueTuple.dll": {}
         }
       },
+      "ScarpLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CsvHelper": "15.0.9",
+          "HtmlAgilityPack": "1.11.26",
+          "Microsoft.CSharp": "4.7.0",
+          "ScrapySharp": "2.5.0",
+          "System.ValueTuple": "4.5.0",
+          "YahooFinanceApi2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ScarpLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarpLib.dll": {}
+        }
+      },
       "YahooFinanceApi2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
@@ -145,6 +183,19 @@
         },
         "runtime": {
           "bin/placeholder/YahooFinanceApi2.dll": {}
+        }
+      },
+      "ZedGraph/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "GitVersionTask": "3.6.5"
+        },
+        "compile": {
+          "bin/placeholder/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     },
@@ -196,6 +247,12 @@
           "lib/net40/FSharp.Core.dll": {}
         }
       },
+      "GitVersionTask/3.6.5": {
+        "type": "package",
+        "build": {
+          "build/dotnet/_._": {}
+        }
+      },
       "HtmlAgilityPack/1.11.26": {
         "type": "package",
         "compile": {
@@ -252,6 +309,20 @@
           "lib/net45/ScrapySharpAsync.dll": {}
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Runtime.Serialization.Primitives/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -278,6 +349,24 @@
           "lib/net461/System.ValueTuple.dll": {}
         }
       },
+      "ScarpLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CsvHelper": "15.0.9",
+          "HtmlAgilityPack": "1.11.26",
+          "Microsoft.CSharp": "4.7.0",
+          "ScrapySharp": "2.5.0",
+          "System.ValueTuple": "4.5.0",
+          "YahooFinanceApi2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ScarpLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarpLib.dll": {}
+        }
+      },
       "YahooFinanceApi2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
@@ -292,6 +381,19 @@
         },
         "runtime": {
           "bin/placeholder/YahooFinanceApi2.dll": {}
+        }
+      },
+      "ZedGraph/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "GitVersionTask": "3.6.5"
+        },
+        "compile": {
+          "bin/placeholder/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     },
@@ -343,6 +445,12 @@
           "lib/net40/FSharp.Core.dll": {}
         }
       },
+      "GitVersionTask/3.6.5": {
+        "type": "package",
+        "build": {
+          "build/dotnet/_._": {}
+        }
+      },
       "HtmlAgilityPack/1.11.26": {
         "type": "package",
         "compile": {
@@ -399,6 +507,20 @@
           "lib/net45/ScrapySharpAsync.dll": {}
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Runtime.Serialization.Primitives/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -425,6 +547,24 @@
           "lib/net461/System.ValueTuple.dll": {}
         }
       },
+      "ScarpLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CsvHelper": "15.0.9",
+          "HtmlAgilityPack": "1.11.26",
+          "Microsoft.CSharp": "4.7.0",
+          "ScrapySharp": "2.5.0",
+          "System.ValueTuple": "4.5.0",
+          "YahooFinanceApi2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ScarpLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarpLib.dll": {}
+        }
+      },
       "YahooFinanceApi2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
@@ -439,6 +579,19 @@
         },
         "runtime": {
           "bin/placeholder/YahooFinanceApi2.dll": {}
+        }
+      },
+      "ZedGraph/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "GitVersionTask": "3.6.5"
+        },
+        "compile": {
+          "bin/placeholder/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     },
@@ -490,6 +643,12 @@
           "lib/net40/FSharp.Core.dll": {}
         }
       },
+      "GitVersionTask/3.6.5": {
+        "type": "package",
+        "build": {
+          "build/dotnet/_._": {}
+        }
+      },
       "HtmlAgilityPack/1.11.26": {
         "type": "package",
         "compile": {
@@ -546,6 +705,20 @@
           "lib/net45/ScrapySharpAsync.dll": {}
         }
       },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Drawing",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
       "System.Runtime.Serialization.Primitives/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -572,6 +745,24 @@
           "lib/net461/System.ValueTuple.dll": {}
         }
       },
+      "ScarpLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CsvHelper": "15.0.9",
+          "HtmlAgilityPack": "1.11.26",
+          "Microsoft.CSharp": "4.7.0",
+          "ScrapySharp": "2.5.0",
+          "System.ValueTuple": "4.5.0",
+          "YahooFinanceApi2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ScarpLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarpLib.dll": {}
+        }
+      },
       "YahooFinanceApi2/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.6.1",
@@ -586,6 +777,19 @@
         },
         "runtime": {
           "bin/placeholder/YahooFinanceApi2.dll": {}
+        }
+      },
+      "ZedGraph/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6",
+        "dependencies": {
+          "GitVersionTask": "3.6.5"
+        },
+        "compile": {
+          "bin/placeholder/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     }
@@ -682,6 +886,28 @@
         "lib/portable-net45+sl5+netcore45/FSharp.Core.optdata",
         "lib/portable-net45+sl5+netcore45/FSharp.Core.sigdata",
         "lib/portable-net45+sl5+netcore45/FSharp.Core.xml"
+      ]
+    },
+    "GitVersionTask/3.6.5": {
+      "sha512": "m8lI2IZzJFvDP9NYQ44xFTPV3gMn4LIXbY6izFuBpjNooxLmcT1HtG3E3aQE4Ch1YsvtscF8qUWyl2ISKY5YdA==",
+      "type": "package",
+      "path": "gitversiontask/3.6.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GitVersionTask.dll",
+        "GitVersionTask.dll.config",
+        "GitVersionTask.pdb",
+        "build/dotnet/GitVersionTask.targets",
+        "build/portable-net+sl+win+wpa+wp/GitVersionTask.targets",
+        "gitversiontask.3.6.5.nupkg.sha512",
+        "gitversiontask.nuspec",
+        "lib/linux/x86_64/libgit2-baa87df.so",
+        "lib/osx/libgit2-baa87df.dylib",
+        "lib/win32/x64/git2-baa87df.dll",
+        "lib/win32/x64/git2-baa87df.pdb",
+        "lib/win32/x86/git2-baa87df.dll",
+        "lib/win32/x86/git2-baa87df.pdb"
       ]
     },
     "HtmlAgilityPack/1.11.26": {
@@ -846,6 +1072,39 @@
         "scrapysharp.nuspec"
       ]
     },
+    "System.Drawing.Common/4.5.0": {
+      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Runtime.Serialization.Primitives/4.3.0": {
       "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
       "type": "package",
@@ -963,10 +1222,20 @@
         "version.txt"
       ]
     },
+    "ScarpLib/1.0.0": {
+      "type": "project",
+      "path": "../ScarpLib/ScarpLib.csproj",
+      "msbuildProject": "../ScarpLib/ScarpLib.csproj"
+    },
     "YahooFinanceApi2/1.0.0": {
       "type": "project",
       "path": "../YahooFinanceApi2/YahooFinanceApi2.csproj",
       "msbuildProject": "../YahooFinanceApi2/YahooFinanceApi2.csproj"
+    },
+    "ZedGraph/1.0.0": {
+      "type": "project",
+      "path": "../ZedGraph/ZedGraph.csproj",
+      "msbuildProject": "../ZedGraph/ZedGraph.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -974,9 +1243,12 @@
       "CsvHelper >= 15.0.9",
       "HtmlAgilityPack >= 1.11.26",
       "Microsoft.CSharp >= 4.7.0",
+      "ScarpLib >= 1.0.0",
       "ScrapySharp >= 2.5.0",
+      "System.Drawing.Common >= 4.5.0",
       "System.ValueTuple >= 4.5.0",
-      "YahooFinanceApi2 >= 1.0.0"
+      "YahooFinanceApi2 >= 1.0.0",
+      "ZedGraph >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1006,8 +1278,14 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
+            "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj": {
+              "projectPath": "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj"
+            },
             "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
               "projectPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
+            },
+            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         }
@@ -1031,6 +1309,10 @@
           "ScrapySharp": {
             "target": "Package",
             "version": "[2.5.0, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[4.5.0, )"
           },
           "System.ValueTuple": {
             "target": "Package",

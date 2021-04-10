@@ -97,5 +97,11 @@ namespace Scrap
             YahooAnalysis yahooAnalysis = new YahooAnalysis();
             yahooAnalysis.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Options opt = new Options();
+            opt.Show();
+        }
     }
 }

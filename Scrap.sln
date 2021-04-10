@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrap", "Scrap\Scrap.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YahooFinanceApi2", "YahooFinanceApi2\YahooFinanceApi2.csproj", "{3CC70BE0-395A-401B-BB94-A0BF7AB5A7C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScarpLib", "ScarpLib\ScarpLib.csproj", "{35E8256D-E1D7-426E-871E-A0FDE597656B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZedGraph", "ZedGraph\ZedGraph.csproj", "{E05946FA-AF66-4A30-8C28-50CD021D66D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZedGraph.UnitTest", "ZedGraph.UnitTest\ZedGraph.UnitTest.csproj", "{15D66EEE-A852-4A52-89C2-83E74ECF3770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZedGraph.Web", "ZedGraph.Web\ZedGraph.Web.csproj", "{B17D1463-CDA6-4E19-B1C9-41B82C84B7DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZedGraph.WinForms", "ZedGraph.WinForms\ZedGraph.WinForms.csproj", "{557D03FB-ED75-494C-9BB8-22D1896B3B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{73E7207E-DCCC-49C8-B005-23D500301348}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +33,30 @@ Global
 		{3CC70BE0-395A-401B-BB94-A0BF7AB5A7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CC70BE0-395A-401B-BB94-A0BF7AB5A7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CC70BE0-395A-401B-BB94-A0BF7AB5A7C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E8256D-E1D7-426E-871E-A0FDE597656B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E8256D-E1D7-426E-871E-A0FDE597656B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E8256D-E1D7-426E-871E-A0FDE597656B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E8256D-E1D7-426E-871E-A0FDE597656B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05946FA-AF66-4A30-8C28-50CD021D66D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05946FA-AF66-4A30-8C28-50CD021D66D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05946FA-AF66-4A30-8C28-50CD021D66D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05946FA-AF66-4A30-8C28-50CD021D66D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D66EEE-A852-4A52-89C2-83E74ECF3770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D66EEE-A852-4A52-89C2-83E74ECF3770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D66EEE-A852-4A52-89C2-83E74ECF3770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D66EEE-A852-4A52-89C2-83E74ECF3770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17D1463-CDA6-4E19-B1C9-41B82C84B7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17D1463-CDA6-4E19-B1C9-41B82C84B7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17D1463-CDA6-4E19-B1C9-41B82C84B7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17D1463-CDA6-4E19-B1C9-41B82C84B7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557D03FB-ED75-494C-9BB8-22D1896B3B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557D03FB-ED75-494C-9BB8-22D1896B3B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557D03FB-ED75-494C-9BB8-22D1896B3B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557D03FB-ED75-494C-9BB8-22D1896B3B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E7207E-DCCC-49C8-B005-23D500301348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E7207E-DCCC-49C8-B005-23D500301348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E7207E-DCCC-49C8-B005-23D500301348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E7207E-DCCC-49C8-B005-23D500301348}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

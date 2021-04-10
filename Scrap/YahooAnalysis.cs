@@ -77,8 +77,7 @@ namespace Scrap
             SortableBindingList<Analysis> lstAnalysis = new SortableBindingList<Analysis>();
 
             String exchange = rdBSE.Checked ? ".BO" : ".NS";
-            //for (int i = 0; i < cmbShares.Items.Count; ++i)
-            for (int i = 0; i < 5; ++i)
+            for (int i = 0; i < cmbShares.Items.Count; ++i)            
             {
                 Analysis analysis = new Analysis();
                 analysis.Share = cmbShares.Items[i].ToString();
@@ -143,6 +142,18 @@ namespace Scrap
 
             dataGridView1.DataSource = lstAnalysis;
             dataGridView1.Refresh();
+        }
+
+        private void rdDefault_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rdDefault.Checked)
+            {
+
+            }
+            else if(rdSelected.Checked)
+            {
+
+            }
         }
     }
 }
