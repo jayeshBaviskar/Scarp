@@ -28,7 +28,7 @@ namespace Scrap
         private void button2_Click(object sender, EventArgs e)
         {
             MoneyControl obj = new MoneyControl();
-            obj.Gainers(dataGridView1, lblLogs);
+            obj.Gainers(dataGridView1, lblLogs, false);
         }
 
         private void button3_Click(object sender, EventArgs e)

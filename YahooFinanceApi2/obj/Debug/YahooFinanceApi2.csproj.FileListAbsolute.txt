@@ -11,3 +11,16 @@ E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CoreCo
 E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CopyComplete
 E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.dll
 E:\StockExchange\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.pdb
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\YahooFinanceApi2.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\YahooFinanceApi2.pdb
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\CsvHelper.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\Flurl.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\Flurl.Http.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\Newtonsoft.Json.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Git\Scarp\YahooFinanceApi2\bin\Debug\System.ValueTuple.dll
+D:\Git\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csprojAssemblyReference.cache
+D:\Git\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CoreCompileInputs.cache
+D:\Git\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.csproj.CopyComplete
+D:\Git\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.dll
+D:\Git\Scarp\YahooFinanceApi2\obj\Debug\YahooFinanceApi2.pdb

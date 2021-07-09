@@ -8,9 +8,11 @@ namespace ScarpLib
 {
     public class MoneyControlIndices
     {
-        private String path_Nifty50 = "/html/body/section[2]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/table/tbody/tr[1]/td[2]";
-        private String path_Sensex = "/html/body/section[2]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/table/tbody/tr[2]/td[2]";
-        private String path_BankNifty = "/html/body/section[2]/div/div[1]/div[2]/div[1]/div/div[1]/div[1]/table/tbody/tr[3]/td[2]";
+        
+
+        private String path_Nifty50 = "/html/body/section[2]/div/div[1]/div[3]/div[1]/div/div[1]/div[1]/table/tbody/tr[1]/td[2]";
+        private String path_Sensex = "/html/body/section[2]/div/div[1]/div[3]/div[1]/div/div[1]/div[1]/table/tbody/tr[2]/td[2]";
+        private String path_BankNifty = "/html/body/section[2]/div/div[1]/div[3]/div[1]/div/div[1]/div[1]/table/tbody/tr[3]/td[2]";
         private String URL = "";
         private ScrapingBrowser Browser;
         private HtmlAgilityPack.HtmlDocument doc;

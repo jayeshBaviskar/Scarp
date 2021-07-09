@@ -15,7 +15,7 @@ namespace Scrap
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new YahooAnalysis());
+            Application.Run(new Home());
         }
     }
 }

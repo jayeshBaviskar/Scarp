@@ -17,7 +17,11 @@ public class DAL
 
     public DAL()
 	{
-        conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\StockExchange\Scarp\Scrap\Database1.mdf;Integrated Security=True";
+        //PC
+        //conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\StockExchange\Scarp\Scrap\Database1.mdf;Integrated Security=True";
+
+        //Laptop
+        conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Git\Scarp\Scrap\Database1.mdf;Integrated Security=True";
         con = new SqlConnection(conString);        
     }
 

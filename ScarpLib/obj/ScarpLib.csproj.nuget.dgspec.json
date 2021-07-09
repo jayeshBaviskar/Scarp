@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj": {}
+    "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj": {}
   },
   "projects": {
-    "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj": {
+    "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj",
+        "projectUniqueName": "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj",
         "projectName": "ScarpLib",
-        "projectPath": "E:\\StockExchange\\Scarp\\ScarpLib\\ScarpLib.csproj",
-        "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
-        "outputPath": "E:\\StockExchange\\Scarp\\ScarpLib\\obj\\",
+        "projectPath": "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj",
+        "packagesPath": "C:\\Users\\jbaviskar\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Scarp\\ScarpLib\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jbaviskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,13 +23,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
-                "projectPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
+              "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+                "projectPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
               }
             }
           }
@@ -73,18 +73,18 @@
         }
       }
     },
-    "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+    "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "projectUniqueName": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
         "projectName": "YahooFinanceApi2",
-        "projectPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
-        "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
-        "outputPath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\obj\\",
+        "projectPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "packagesPath": "C:\\Users\\jbaviskar\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jbaviskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +92,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net461": {

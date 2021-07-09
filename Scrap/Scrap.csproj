@@ -134,6 +134,20 @@
     <Compile Include="Graphs\ZedGraphWindow.Designer.cs">
       <DependentUpon>ZedGraphWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investing.com\PathConstants.cs" />
+    <Compile Include="Investing.com\ShareURLs.cs" />
+    <Compile Include="Investing.com\Technical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investing.com\Technical.Designer.cs">
+      <DependentUpon>Technical.cs</DependentUpon>
+    </Compile>
     <Compile Include="MoneyControl.cs" />
     <Compile Include="News.cs">
       <SubType>Form</SubType>
@@ -181,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Graphs\ZedGraphWindow.resx">
       <DependentUpon>ZedGraphWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investing.com\Technical.resx">
+      <DependentUpon>Technical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="News.resx">
       <DependentUpon>News.cs</DependentUpon>
