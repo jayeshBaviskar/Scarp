@@ -7,3 +7,13 @@ E:\StockExchange\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.AssemblyInfo.c
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.csproj.CoreCompileInputs.cache
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.dll
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph\bin\Debug\netstandard2.0\ZedGraph.deps.json
+D:\Projects\Scarp\ZedGraph\bin\Debug\netstandard2.0\ZedGraph.dll
+D:\Projects\Scarp\ZedGraph\bin\Debug\netstandard2.0\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.csproj.AssemblyReference.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.AssemblyInfoInputs.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.AssemblyInfo.cs
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.csproj.CoreCompileInputs.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.dll
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph\obj\Debug\netstandard2.0\ZedGraph.GeneratedMSBuildEditorConfig.editorconfig

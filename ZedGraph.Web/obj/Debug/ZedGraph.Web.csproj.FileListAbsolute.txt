@@ -7,3 +7,12 @@ E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CoreCompileInp
 E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CopyComplete
 E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.dll
 E:\StockExchange\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.pdb
+D:\Projects\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.Web.dll
+D:\Projects\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.Web.pdb
+D:\Projects\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.dll
+D:\Projects\Scarp\ZedGraph.Web\bin\Debug\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.AssemblyReference.cache
+D:\Projects\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CoreCompileInputs.cache
+D:\Projects\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.csproj.CopyComplete
+D:\Projects\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.dll
+D:\Projects\Scarp\ZedGraph.Web\obj\Debug\ZedGraph.Web.pdb

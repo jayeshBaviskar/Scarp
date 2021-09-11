@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "+ZKPKG/GIdiBH1BCuYHo1PyYTDa3wUIxJhIFUtBzJvSj5r3anVL94Rfuce5lP+CNQwHGZbufMG+SViz1yW48Jg==",
+  "dgSpecHash": "w4235hCnV1e69F53oHe6jf1+wbvwm1K7t5x3cdOU0vzco98sxcDFCD1eW6banoe/WI/9CpXLJYddEXf+DPSliA==",
   "success": true,
-  "projectFilePath": "E:\\StockExchange\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+  "projectFilePath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jay\\.nuget\\packages\\csvhelper\\15.0.9\\csvhelper.15.0.9.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\flurl\\2.5.0\\flurl.2.5.0.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\flurl.http\\2.0.0\\flurl.http.2.0.0.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\system.runtime.serialization.primitives\\4.3.0\\system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512"
+    "C:\\Users\\jayes\\.nuget\\packages\\csvhelper\\15.0.9\\csvhelper.15.0.9.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\flurl\\2.5.0\\flurl.2.5.0.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\flurl.http\\2.0.0\\flurl.http.2.0.0.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\newtonsoft.json\\10.0.3\\newtonsoft.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\system.runtime.serialization.primitives\\4.3.0\\system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }

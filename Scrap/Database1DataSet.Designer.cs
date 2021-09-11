@@ -752,7 +752,7 @@ namespace Scrap.Database1DataSetTableAdapters {
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT DISTINCT CompanyName\r\nFROM   Gainer";
+            this._commandCollection[2].CommandText = "SELECT DISTINCT CompanyName\nFROM   Gainer";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         

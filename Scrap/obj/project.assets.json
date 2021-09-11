@@ -1,18 +1,22 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.6.1": {
-      "CsvHelper/15.0.9": {
+    ".NETFramework,Version=v4.7.2": {
+      "CsvHelper/27.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.ValueTuple": "4.4.0"
+          "Microsoft.Bcl.AsyncInterfaces": "[5.0.0]",
+          "Microsoft.Bcl.HashCode": "[1.1.1]",
+          "Microsoft.CSharp": "[4.7.0]",
+          "System.Buffers": "[4.5.1]",
+          "System.Memory": "[4.5.4]",
+          "System.Threading.Tasks.Extensions": "[4.5.4]"
         },
         "compile": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         }
       },
       "Flurl/2.5.0": {
@@ -40,13 +44,59 @@
           "lib/net45/Flurl.Http.dll": {}
         }
       },
-      "FSharp.Core/4.0.0.1": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "runtime": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "GitVersionTask/3.6.5": {
@@ -55,13 +105,41 @@
           "build/dotnet/_._": {}
         }
       },
-      "HtmlAgilityPack/1.11.26": {
+      "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/Microsoft.Bcl.HashCode.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -85,33 +163,35 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "ScrapySharp/2.5.0": {
+      "ScrapySharp/3.0.0": {
         "type": "package",
         "dependencies": {
-          "FSharp.Core": "4.0.0.1",
-          "HtmlAgilityPack": "1.4.9"
+          "FSharp.Core": "4.5.2",
+          "HtmlAgilityPack": "1.7.4",
+          "System.Runtime.Caching": "4.5.0-preview1-26216-02"
         },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Runtime.Caching",
-          "System.Web",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
         "compile": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         },
         "runtime": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         }
       },
-      "System.Drawing.Common/4.5.0": {
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/5.0.2": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -123,6 +203,67 @@
         },
         "runtime": {
           "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.Caching/4.5.0-preview1-26216-02": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Caching"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net45/_._": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Serialization.Primitives/4.3.0": {
@@ -138,17 +279,31 @@
           "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
+      "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
         "frameworkAssemblies": [
-          "System",
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
         }
       },
       "ScarpLib/1.0.0": {
@@ -187,7 +342,7 @@
       },
       "ZedGraph/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+        "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
           "GitVersionTask": "3.6.5"
         },
@@ -199,18 +354,22 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win": {
-      "CsvHelper/15.0.9": {
+    ".NETFramework,Version=v4.7.2/win": {
+      "CsvHelper/27.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.ValueTuple": "4.4.0"
+          "Microsoft.Bcl.AsyncInterfaces": "[5.0.0]",
+          "Microsoft.Bcl.HashCode": "[1.1.1]",
+          "Microsoft.CSharp": "[4.7.0]",
+          "System.Buffers": "[4.5.1]",
+          "System.Memory": "[4.5.4]",
+          "System.Threading.Tasks.Extensions": "[4.5.4]"
         },
         "compile": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         }
       },
       "Flurl/2.5.0": {
@@ -238,13 +397,59 @@
           "lib/net45/Flurl.Http.dll": {}
         }
       },
-      "FSharp.Core/4.0.0.1": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "runtime": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "GitVersionTask/3.6.5": {
@@ -253,13 +458,41 @@
           "build/dotnet/_._": {}
         }
       },
-      "HtmlAgilityPack/1.11.26": {
+      "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/Microsoft.Bcl.HashCode.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -283,33 +516,35 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "ScrapySharp/2.5.0": {
+      "ScrapySharp/3.0.0": {
         "type": "package",
         "dependencies": {
-          "FSharp.Core": "4.0.0.1",
-          "HtmlAgilityPack": "1.4.9"
+          "FSharp.Core": "4.5.2",
+          "HtmlAgilityPack": "1.7.4",
+          "System.Runtime.Caching": "4.5.0-preview1-26216-02"
         },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Runtime.Caching",
-          "System.Web",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
         "compile": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         },
         "runtime": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         }
       },
-      "System.Drawing.Common/4.5.0": {
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/5.0.2": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -321,6 +556,61 @@
         },
         "runtime": {
           "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.Caching/4.5.0-preview1-26216-02": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Caching"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Serialization.Primitives/4.3.0": {
@@ -336,17 +626,31 @@
           "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
+      "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
         "frameworkAssemblies": [
-          "System",
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
         }
       },
       "ScarpLib/1.0.0": {
@@ -385,7 +689,7 @@
       },
       "ZedGraph/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+        "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
           "GitVersionTask": "3.6.5"
         },
@@ -397,18 +701,22 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x64": {
-      "CsvHelper/15.0.9": {
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "CsvHelper/27.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.ValueTuple": "4.4.0"
+          "Microsoft.Bcl.AsyncInterfaces": "[5.0.0]",
+          "Microsoft.Bcl.HashCode": "[1.1.1]",
+          "Microsoft.CSharp": "[4.7.0]",
+          "System.Buffers": "[4.5.1]",
+          "System.Memory": "[4.5.4]",
+          "System.Threading.Tasks.Extensions": "[4.5.4]"
         },
         "compile": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         }
       },
       "Flurl/2.5.0": {
@@ -436,13 +744,59 @@
           "lib/net45/Flurl.Http.dll": {}
         }
       },
-      "FSharp.Core/4.0.0.1": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "runtime": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "GitVersionTask/3.6.5": {
@@ -451,13 +805,41 @@
           "build/dotnet/_._": {}
         }
       },
-      "HtmlAgilityPack/1.11.26": {
+      "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/Microsoft.Bcl.HashCode.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -481,33 +863,35 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "ScrapySharp/2.5.0": {
+      "ScrapySharp/3.0.0": {
         "type": "package",
         "dependencies": {
-          "FSharp.Core": "4.0.0.1",
-          "HtmlAgilityPack": "1.4.9"
+          "FSharp.Core": "4.5.2",
+          "HtmlAgilityPack": "1.7.4",
+          "System.Runtime.Caching": "4.5.0-preview1-26216-02"
         },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Runtime.Caching",
-          "System.Web",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
         "compile": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         },
         "runtime": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         }
       },
-      "System.Drawing.Common/4.5.0": {
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/5.0.2": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -519,6 +903,61 @@
         },
         "runtime": {
           "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.Caching/4.5.0-preview1-26216-02": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Caching"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Serialization.Primitives/4.3.0": {
@@ -534,17 +973,31 @@
           "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
+      "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
         "frameworkAssemblies": [
-          "System",
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
         }
       },
       "ScarpLib/1.0.0": {
@@ -583,7 +1036,7 @@
       },
       "ZedGraph/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+        "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
           "GitVersionTask": "3.6.5"
         },
@@ -595,18 +1048,22 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x86": {
-      "CsvHelper/15.0.9": {
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "CsvHelper/27.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.ValueTuple": "4.4.0"
+          "Microsoft.Bcl.AsyncInterfaces": "[5.0.0]",
+          "Microsoft.Bcl.HashCode": "[1.1.1]",
+          "Microsoft.CSharp": "[4.7.0]",
+          "System.Buffers": "[4.5.1]",
+          "System.Memory": "[4.5.4]",
+          "System.Threading.Tasks.Extensions": "[4.5.4]"
         },
         "compile": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net47/CsvHelper.dll": {}
         }
       },
       "Flurl/2.5.0": {
@@ -634,13 +1091,59 @@
           "lib/net45/Flurl.Http.dll": {}
         }
       },
-      "FSharp.Core/4.0.0.1": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "runtime": {
-          "lib/net40/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
+        },
+        "resource": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net45/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net45/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "GitVersionTask/3.6.5": {
@@ -649,13 +1152,41 @@
           "build/dotnet/_._": {}
         }
       },
-      "HtmlAgilityPack/1.11.26": {
+      "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "Microsoft.Bcl.HashCode/1.1.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/Microsoft.Bcl.HashCode.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.HashCode.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {
@@ -679,33 +1210,35 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "ScrapySharp/2.5.0": {
+      "ScrapySharp/3.0.0": {
         "type": "package",
         "dependencies": {
-          "FSharp.Core": "4.0.0.1",
-          "HtmlAgilityPack": "1.4.9"
+          "FSharp.Core": "4.5.2",
+          "HtmlAgilityPack": "1.7.4",
+          "System.Runtime.Caching": "4.5.0-preview1-26216-02"
         },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Runtime.Caching",
-          "System.Web",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
         "compile": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         },
         "runtime": {
-          "lib/net45/ScrapySharp.Core.dll": {},
-          "lib/net45/ScrapySharpAsync.dll": {}
+          "lib/netstandard2.0/ScrapySharp.Core.dll": {},
+          "lib/netstandard2.0/ScrapySharp.dll": {}
         }
       },
-      "System.Drawing.Common/4.5.0": {
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Drawing.Common/5.0.2": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -717,6 +1250,61 @@
         },
         "runtime": {
           "lib/net461/System.Drawing.Common.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.Caching/4.5.0-preview1-26216-02": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Caching"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Serialization.Primitives/4.3.0": {
@@ -732,17 +1320,31 @@
           "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
+      "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
         "frameworkAssemblies": [
-          "System",
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
         }
       },
       "ScarpLib/1.0.0": {
@@ -781,7 +1383,7 @@
       },
       "ZedGraph/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.6",
+        "framework": ".NETFramework,Version=v4.7",
         "dependencies": {
           "GitVersionTask": "3.6.5"
         },
@@ -795,20 +1397,22 @@
     }
   },
   "libraries": {
-    "CsvHelper/15.0.9": {
-      "sha512": "TH231NEh7DMQhQKySQMVms5ZN1kEMpqBujqTdLhV4o1huHtjFtX4l537nOrhz+y5hCpgIk0qm9DdSYGXv24o2A==",
+    "CsvHelper/27.1.1": {
+      "sha512": "lo5yypClBORR2XiWPRxQApaA4C2R4GVCIPVRt9HfaLxLmVQtg/KZiOYsd4luLgyOxkUatF9R0QdFQYk7Y2l0cw==",
       "type": "package",
-      "path": "csvhelper/15.0.9",
+      "path": "csvhelper/27.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "csvhelper.15.0.9.nupkg.sha512",
+        "csvhelper.27.1.1.nupkg.sha512",
         "csvhelper.nuspec",
         "lib/net45/CsvHelper.dll",
         "lib/net45/CsvHelper.xml",
         "lib/net47/CsvHelper.dll",
         "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
         "lib/netstandard2.0/CsvHelper.dll",
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
@@ -849,43 +1453,52 @@
         "lib/netstandard1.3/Flurl.Http.xml"
       ]
     },
-    "FSharp.Core/4.0.0.1": {
-      "sha512": "lNtlbbJ5hP8LEd7nKtTUiGEpLmHLWiU39x+0jq4rmRWG7Mgj6vYm+gmTOhtwpiPFX8j8zUsfLyA8AC7dZY75LQ==",
+    "FSharp.Core/4.5.2": {
+      "sha512": "apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
       "type": "package",
-      "path": "fsharp.core/4.0.0.1",
+      "path": "fsharp.core/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fsharp.core.4.0.0.1.nupkg.sha512",
+        "fsharp.core.4.5.2.nupkg.sha512",
         "fsharp.core.nuspec",
-        "lib/net20/FSharp.Core.dll",
-        "lib/net20/FSharp.Core.optdata",
-        "lib/net20/FSharp.Core.sigdata",
-        "lib/net20/FSharp.Core.xml",
-        "lib/net40/FSharp.Core.dll",
-        "lib/net40/FSharp.Core.optdata",
-        "lib/net40/FSharp.Core.sigdata",
-        "lib/net40/FSharp.Core.xml",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.dll",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.optdata",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.sigdata",
-        "lib/portable-net45+monoandroid10+monotouch10+xamarinios10/FSharp.Core.xml",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.dll",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45+wp8/FSharp.Core.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45+wpa81+wp8/FSharp.Core.xml",
-        "lib/portable-net45+netcore45/FSharp.Core.dll",
-        "lib/portable-net45+netcore45/FSharp.Core.optdata",
-        "lib/portable-net45+netcore45/FSharp.Core.sigdata",
-        "lib/portable-net45+netcore45/FSharp.Core.xml",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.dll",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.optdata",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.sigdata",
-        "lib/portable-net45+sl5+netcore45/FSharp.Core.xml"
+        "lib/net45/FSharp.Core.dll",
+        "lib/net45/FSharp.Core.optdata",
+        "lib/net45/FSharp.Core.resources.dll",
+        "lib/net45/FSharp.Core.sigdata",
+        "lib/net45/FSharp.Core.xml",
+        "lib/net45/cs/FSharp.Core.resources.dll",
+        "lib/net45/de/FSharp.Core.resources.dll",
+        "lib/net45/en/FSharp.Core.resources.dll",
+        "lib/net45/es/FSharp.Core.resources.dll",
+        "lib/net45/fr/FSharp.Core.resources.dll",
+        "lib/net45/it/FSharp.Core.resources.dll",
+        "lib/net45/ja/FSharp.Core.resources.dll",
+        "lib/net45/ko/FSharp.Core.resources.dll",
+        "lib/net45/pl/FSharp.Core.resources.dll",
+        "lib/net45/pt-BR/FSharp.Core.resources.dll",
+        "lib/net45/ru/FSharp.Core.resources.dll",
+        "lib/net45/tr/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/FSharp.Core.dll",
+        "lib/netstandard1.6/FSharp.Core.optdata",
+        "lib/netstandard1.6/FSharp.Core.sigdata",
+        "lib/netstandard1.6/FSharp.Core.xml",
+        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
     "GitVersionTask/3.6.5": {
@@ -910,14 +1523,14 @@
         "lib/win32/x86/git2-baa87df.pdb"
       ]
     },
-    "HtmlAgilityPack/1.11.26": {
-      "sha512": "e0L7s+cj4MapB8hpL8sakwTSwX/cngBCcNfCT8/2v1IRXoly/hrt3FjkzGmgsjMHlO50whSGmRbDhEiUudd3tQ==",
+    "HtmlAgilityPack/1.11.36": {
+      "sha512": "dCuPhd6Mcdz0oyaSidPqZZiaKcVaBnIqCQlvgJx7Qr5PJAjSatSIVPmuOwpMjbtR8mqoXyUbWVKxuairGGauJg==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.26",
+      "path": "htmlagilitypack/1.11.36",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.26.nupkg.sha512",
+        "htmlagilitypack.1.11.36.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net35/HtmlAgilityPack.dll",
         "lib/Net35/HtmlAgilityPack.pdb",
@@ -956,6 +1569,56 @@
         "lib/uap10.0/HtmlAgilityPack.dll",
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Bcl.HashCode/1.1.1": {
+      "sha512": "MalY0Y/uM/LjXtHfX/26l2VtN4LDNZ2OE3aumNOHDLsT4fNYy2hiHXI4CXCqKpNUNm7iJ2brrc4J89UdaL56FA==",
+      "type": "package",
+      "path": "microsoft.bcl.hashcode/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.HashCode.dll",
+        "lib/net461/Microsoft.Bcl.HashCode.xml",
+        "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.dll",
+        "lib/netcoreapp2.1/Microsoft.Bcl.HashCode.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.HashCode.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.HashCode.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.HashCode.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.HashCode.xml",
+        "microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+        "microsoft.bcl.hashcode.nuspec",
+        "ref/net461/Microsoft.Bcl.HashCode.dll",
+        "ref/netcoreapp2.1/Microsoft.Bcl.HashCode.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.HashCode.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.HashCode.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -1057,33 +1720,65 @@
         "tools/install.ps1"
       ]
     },
-    "ScrapySharp/2.5.0": {
-      "sha512": "aLaa/wvV3wd0ZAEwOI3cthZOJaKxvK3tPXePQfcFVJsNXtvXKgvADZ3ct2y2y/mw6II9btEc/eAl1AQGDPS87Q==",
+    "ScrapySharp/3.0.0": {
+      "sha512": "qwOe4oPAFPgFP5pi9aMHo5I66Pw8EYiY93k/FQvHs3P0vgt/cnjsgMuoc6pxYXrxVbBdKSqPTkem1D4iktjHNQ==",
       "type": "package",
-      "path": "scrapysharp/2.5.0",
+      "path": "scrapysharp/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net40/ScrapySharp.Core.dll",
-        "lib/net40/ScrapySharp.dll",
-        "lib/net45/ScrapySharp.Core.dll",
-        "lib/net45/ScrapySharpAsync.dll",
-        "scrapysharp.2.5.0.nupkg.sha512",
+        "lib/netstandard2.0/ScrapySharp.Core.dll",
+        "lib/netstandard2.0/ScrapySharp.dll",
+        "scrapysharp.3.0.0.nupkg.sha512",
         "scrapysharp.nuspec"
       ]
     },
-    "System.Drawing.Common/4.5.0": {
-      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
-      "path": "system.drawing.common/4.5.0",
+      "path": "system.buffers/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Drawing.Common/5.0.2": {
+      "sha512": "rvr/M1WPf24ljpvvrVd74+NdjRUJu1bBkspkZcnzSZnmAUQWSvanlQ0k/hVHk+cHufZbZfu7vOh/vYc0q5Uu/A==",
+      "type": "package",
+      "path": "system.drawing.common/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net461/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -1092,15 +1787,153 @@
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
         "ref/netstandard2.0/System.Drawing.Common.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "system.drawing.common.4.5.0.nupkg.sha512",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.5.0.2.nupkg.sha512",
         "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.Caching/4.5.0-preview1-26216-02": {
+      "sha512": "IRlmpGTFx3HpFnBNIzrKgKM75bYMIITTBzvDOB5v/fNq/0N5P1qgOuEYfWJwcVGdSs5MFNVKmxHtj59SIxZNVg==",
+      "type": "package",
+      "path": "system.runtime.caching/4.5.0-preview1-26216-02",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Runtime.Caching.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Runtime.Caching.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll",
+        "system.runtime.caching.4.5.0-preview1-26216-02.nupkg.sha512",
+        "system.runtime.caching.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1178,6 +2011,43 @@
         "system.runtime.serialization.primitives.nuspec"
       ]
     },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.ValueTuple/4.5.0": {
       "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "type": "package",
@@ -1239,68 +2109,73 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.6.1": [
-      "CsvHelper >= 15.0.9",
-      "HtmlAgilityPack >= 1.11.26",
+    ".NETFramework,Version=v4.7.2": [
+      "CsvHelper >= 27.1.1",
+      "HtmlAgilityPack >= 1.11.36",
       "Microsoft.CSharp >= 4.7.0",
       "ScarpLib >= 1.0.0",
-      "ScrapySharp >= 2.5.0",
-      "System.Drawing.Common >= 4.5.0",
+      "ScrapySharp >= 3.0.0",
+      "System.Drawing.Common >= 5.0.2",
       "System.ValueTuple >= 4.5.0",
       "YahooFinanceApi2 >= 1.0.0",
       "ZedGraph >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jbaviskar\\.nuget\\packages\\": {}
+    "C:\\Users\\jayes\\.nuget\\packages\\": {},
+    "D:\\Programs\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Scarp\\Scrap\\Scrap.csproj",
+      "projectUniqueName": "D:\\Projects\\Scarp\\Scrap\\Scrap.csproj",
       "projectName": "Scrap",
-      "projectPath": "D:\\Git\\Scarp\\Scrap\\Scrap.csproj",
-      "packagesPath": "C:\\Users\\jbaviskar\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Scarp\\Scrap\\obj\\",
+      "projectPath": "D:\\Projects\\Scarp\\Scrap\\Scrap.csproj",
+      "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Scarp\\Scrap\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\Programs\\SDK\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jbaviskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net461"
+        "net472"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net461": {
+        "net472": {
           "projectReferences": {
-            "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj": {
-              "projectPath": "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj"
+            "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj"
             },
-            "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
-              "projectPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
+            "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
             },
-            "D:\\Git\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "D:\\Git\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net461": {
+      "net472": {
         "dependencies": {
           "CsvHelper": {
             "target": "Package",
-            "version": "[15.0.9, )"
+            "version": "[27.1.1, )"
           },
           "HtmlAgilityPack": {
             "target": "Package",
-            "version": "[1.11.26, )"
+            "version": "[1.11.36, )"
           },
           "Microsoft.CSharp": {
             "target": "Package",
@@ -1308,11 +2183,11 @@
           },
           "ScrapySharp": {
             "target": "Package",
-            "version": "[2.5.0, )"
+            "version": "[3.0.0, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
-            "version": "[4.5.0, )"
+            "version": "[5.0.2, )"
           },
           "System.ValueTuple": {
             "target": "Package",

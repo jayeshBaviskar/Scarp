@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Scrap</RootNamespace>
     <AssemblyName>Scrap</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -85,6 +85,10 @@
     </Reference>
     <Reference Include="XTS.FinancialChart">
       <HintPath>C:\Users\Jay\Downloads\XFinChartPackage\DLL\XTS.FinancialChart.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.WinForms, Version=0.1.0.0, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZedGraph.WinForms\obj\Debug\net40\ZedGraph.WinForms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -272,19 +276,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CsvHelper">
-      <Version>15.0.9</Version>
+      <Version>27.1.1</Version>
     </PackageReference>
     <PackageReference Include="HtmlAgilityPack">
-      <Version>1.11.26</Version>
+      <Version>1.11.36</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.CSharp">
       <Version>4.7.0</Version>
     </PackageReference>
     <PackageReference Include="ScrapySharp">
-      <Version>2.5.0</Version>
+      <Version>3.0.0</Version>
     </PackageReference>
     <PackageReference Include="System.Drawing.Common">
-      <Version>4.5.0</Version>
+      <Version>5.0.2</Version>
     </PackageReference>
     <PackageReference Include="System.ValueTuple">
       <Version>4.5.0</Version>
@@ -298,18 +302,6 @@
     <ProjectReference Include="..\YahooFinanceApi2\YahooFinanceApi2.csproj">
       <Project>{3cc70be0-395a-401b-bb94-a0bf7ab5a7c6}</Project>
       <Name>YahooFinanceApi2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZedGraph.UnitTest\ZedGraph.UnitTest.csproj">
-      <Project>{15d66eee-a852-4a52-89c2-83e74ecf3770}</Project>
-      <Name>ZedGraph.UnitTest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZedGraph.Web\ZedGraph.Web.csproj">
-      <Project>{b17d1463-cda6-4e19-b1c9-41b82c84b7dd}</Project>
-      <Name>ZedGraph.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZedGraph.WinForms\ZedGraph.WinForms.csproj">
-      <Project>{557D03FB-ED75-494C-9BB8-22D1896B3B1E}</Project>
-      <Name>ZedGraph.WinForms</Name>
     </ProjectReference>
     <ProjectReference Include="..\ZedGraph\ZedGraph.csproj">
       <Project>{e05946fa-af66-4a30-8c28-50cd021d66d5}</Project>

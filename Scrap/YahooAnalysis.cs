@@ -129,8 +129,9 @@ namespace Scrap
                         dataGridView1.Refresh();
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    MessageBox.Show(ex.StackTrace);
                 }
                 finally
                 {

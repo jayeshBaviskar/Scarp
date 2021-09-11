@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ComboBoxDataSet" targetNamespace="http://tempuri.org/ComboBoxDataSet.xsd" xmlns:mstns="http://tempuri.org/ComboBoxDataSet.xsd" xmlns="http://tempuri.org/ComboBoxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectingStringForComboBox" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectingStringForComboBox (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BSECron.UI.Properties.Settings.GlobalReference.Default.ConnectingStringForComboBox" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BseDataTableAdapter" GeneratorDataComponentClassName="BseDataTableAdapter" Name="BseData" UserDataComponentName="BseDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectingStringForComboBox (Settings)" DbObjectName="dbo.BseData" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SC_NAME FROM dbo.BseData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SC_NAME" DataSetColumn="SC_NAME" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectingStringForComboBox (Settings)" DbObjectName="dbo.BseData" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DISTINCT(SC_NAME) FROM dbo.BseData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ConnectingStringForComboBox (Settings)" DbObjectName="dbo.BseData" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DISTINCT SC_NAME
+FROM   BseData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ComboBoxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ComboBoxDataSet" msprop:Generator_UserDSName="ComboBoxDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BseData" msprop:Generator_TableClassName="BseDataDataTable" msprop:Generator_TableVarName="tableBseData" msprop:Generator_RowChangedName="BseDataRowChanged" msprop:Generator_TablePropName="BseData" msprop:Generator_RowDeletingName="BseDataRowDeleting" msprop:Generator_RowChangingName="BseDataRowChanging" msprop:Generator_RowEvHandlerName="BseDataRowChangeEventHandler" msprop:Generator_RowDeletedName="BseDataRowDeleted" msprop:Generator_RowClassName="BseDataRow" msprop:Generator_UserTableName="BseData" msprop:Generator_RowEvArgName="BseDataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SC_NAME" msprop:Generator_ColumnVarNameInTable="columnSC_NAME" msprop:Generator_ColumnPropNameInRow="SC_NAME" msprop:Generator_ColumnPropNameInTable="SC_NAMEColumn" msprop:Generator_UserColumnName="SC_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

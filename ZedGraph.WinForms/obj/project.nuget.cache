@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ogQau28eQqnSZ+XwJOQeTRSlz3E31LYPxnUHyiKpmU+3aDmVrkmzkJKHy/sx9nBmgUBWpRsiV71gWwAienO48A==",
+  "dgSpecHash": "gCsDG7SH8jDUWUndFi/7srB06Shh+EvFzvaHt3/2bVfONbHiHNIBN6RZT1vWeJwmh3SXXtUl3TaJsi92XkC7dw==",
   "success": true,
-  "projectFilePath": "E:\\StockExchange\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
+  "projectFilePath": "D:\\Projects\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jay\\.nuget\\packages\\gitversiontask\\3.6.5\\gitversiontask.3.6.5.nupkg.sha512"
+    "C:\\Users\\jayes\\.nuget\\packages\\gitversiontask\\5.5.1\\gitversiontask.5.5.1.nupkg.sha512"
   ],
   "logs": []
 }

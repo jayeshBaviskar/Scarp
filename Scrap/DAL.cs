@@ -21,7 +21,9 @@ public class DAL
         //conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\StockExchange\Scarp\Scrap\Database1.mdf;Integrated Security=True";
 
         //Laptop
-        conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Git\Scarp\Scrap\Database1.mdf;Integrated Security=True";
+        //conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Git\Scarp\Scrap\Database1.mdf;Integrated Security=True";
+
+        conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projects\Scarp\Scrap\Database1.mdf;Integrated Security=True";
         con = new SqlConnection(conString);        
     }
 
@@ -44,6 +46,19 @@ public class DAL
     }
 
 
+    public int MyExecuteNonQuery(SqlCommand cmd , String query)
+    {
+       
+        if (con.State == ConnectionState.Closed)
+        {
+            con.Open();
+        }
+
+        int res = cmd.ExecuteNonQuery();
+        con.Close();
+        return res;
+
+    }
     public int MyExecuteNonQuery(String query)
     {
         SqlCommand cmd = new SqlCommand(query,con);

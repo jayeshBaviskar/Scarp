@@ -6,3 +6,12 @@ E:\StockExchange\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.AssemblyInfo.cs
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.csproj.CoreCompileInputs.cache
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.dll
 E:\StockExchange\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph\bin\Debug\net47\ZedGraph.dll
+D:\Projects\Scarp\ZedGraph\bin\Debug\net47\ZedGraph.pdb
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.csproj.AssemblyReference.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.AssemblyInfoInputs.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.AssemblyInfo.cs
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.csproj.CoreCompileInputs.cache
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.dll
+D:\Projects\Scarp\ZedGraph\obj\Debug\net47\ZedGraph.pdb

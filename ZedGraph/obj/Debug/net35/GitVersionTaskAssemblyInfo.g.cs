@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: AssemblyVersion("0.1.0.0")]
 [assembly: AssemblyFileVersion("0.1.0.0")]
-[assembly: AssemblyInformationalVersion("0.1.0-main.1+7.Branch.main.Sha.d5c423b8ab8341c531658813af14a56a54fd3019")]
+[assembly: AssemblyInformationalVersion("0.1.0+9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829")]
 
 namespace ZedGraph
 {
@@ -24,27 +24,27 @@ namespace ZedGraph
         public static string Major = "0";
         public static string Minor = "1";
         public static string Patch = "0";
-        public static string PreReleaseTag = "main.1";
-        public static string PreReleaseTagWithDash = "-main.1";
-        public static string PreReleaseLabel = "main";
-        public static string PreReleaseNumber = "1";
-        public static string BuildMetaData = "7";
-        public static string BuildMetaDataPadded = "0007";
-        public static string FullBuildMetaData = "7.Branch.main.Sha.d5c423b8ab8341c531658813af14a56a54fd3019";
+        public static string PreReleaseTag = "";
+        public static string PreReleaseTagWithDash = "";
+        public static string PreReleaseLabel = "";
+        public static string PreReleaseNumber = "";
+        public static string BuildMetaData = "9";
+        public static string BuildMetaDataPadded = "0009";
+        public static string FullBuildMetaData = "9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829";
         public static string MajorMinorPatch = "0.1.0";
-        public static string SemVer = "0.1.0-main.1";
-        public static string LegacySemVer = "0.1.0-main1";
-        public static string LegacySemVerPadded = "0.1.0-main0001";
+        public static string SemVer = "0.1.0";
+        public static string LegacySemVer = "0.1.0";
+        public static string LegacySemVerPadded = "0.1.0";
         public static string AssemblySemVer = "0.1.0.0";
-        public static string FullSemVer = "0.1.0-main.1+7";
-        public static string InformationalVersion = "0.1.0-main.1+7.Branch.main.Sha.d5c423b8ab8341c531658813af14a56a54fd3019";
+        public static string FullSemVer = "0.1.0+9";
+        public static string InformationalVersion = "0.1.0+9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829";
         public static string BranchName = "main";
-        public static string Sha = "d5c423b8ab8341c531658813af14a56a54fd3019";
-        public static string NuGetVersionV2 = "0.1.0-main0001";
-        public static string NuGetVersion = "0.1.0-main0001";
-        public static string CommitsSinceVersionSource = "7";
-        public static string CommitsSinceVersionSourcePadded = "0007";
-        public static string CommitDate = "2021-04-10";
+        public static string Sha = "f5e781587587537ffb20ddbb6db43c30a6ce7829";
+        public static string NuGetVersionV2 = "0.1.0";
+        public static string NuGetVersion = "0.1.0";
+        public static string CommitsSinceVersionSource = "9";
+        public static string CommitsSinceVersionSourcePadded = "0009";
+        public static string CommitDate = "2021-07-09";
     }
 
 }

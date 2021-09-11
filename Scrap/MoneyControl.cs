@@ -32,8 +32,20 @@ namespace Scrap
             //doc.LoadHtml(URL);
             HtmlNode div = doc.GetElementbyId("data_table_ajax_loading");
 
+           
+
             String rootTable = "/html/body/section/section/section/div[1]/div[2]/div/div/div[2]/table/tbody";
+
+            String root_LastFivePerfomance = "/html/body/section/section/section/div[1]/div[2]/div/div/div[2]/table/tbody/tr[1]/td[15]";
+
+
             HtmlNode rootNode = div.SelectSingleNode(rootTable);
+
+            // TO REMOVE
+            HtmlNode lastFiveDays = div.SelectSingleNode(root_LastFivePerfomance);
+            IEnumerable<HtmlNode> lastNodes =  lastFiveDays.SelectNodes("div");
+
+
             HtmlNode dateField =  div.SelectSingleNode("/html/body/section/section/div[2]/span");
             String strDate = dateField.InnerText.Replace("|", "").Trim();
 
@@ -105,11 +117,13 @@ namespace Scrap
             }
 
             dg.DataSource = gainers;
-            dg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dg.AutoResizeColumns();
             dg.Refresh();
             lbl.Text = "Total Gainers: " + gainers.Count;
             return str;
         }
+
+
     }
 }

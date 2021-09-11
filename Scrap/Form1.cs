@@ -29,6 +29,7 @@ namespace Scrap
         {
             MoneyControl obj = new MoneyControl();
             obj.Gainers(dataGridView1, lblLogs, false);
+            MessageBox.Show("Execution Completed");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -103,5 +104,7 @@ namespace Scrap
             Options opt = new Options();
             opt.Show();
         }
+
+      
     }
 }

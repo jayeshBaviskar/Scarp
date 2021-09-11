@@ -42,5 +42,10 @@ namespace Scrap
             Options frm1 = new Options();
             frm1.Show();
         }
+
+        private void bSECronToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

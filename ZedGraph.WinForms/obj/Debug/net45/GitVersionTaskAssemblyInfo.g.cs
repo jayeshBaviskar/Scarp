@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: AssemblyVersion("0.1.0.0")]
 [assembly: AssemblyFileVersion("0.1.0.0")]
-[assembly: AssemblyInformationalVersion("0.1.0-main.1+6.Branch.main.Sha.90028062a3d293699594ba55668dce90020c76a4")]
+[assembly: AssemblyInformationalVersion("0.1.0-main.1+9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829")]
 
 namespace ZedGraph
 {
@@ -28,23 +28,23 @@ namespace ZedGraph
         public static string PreReleaseTagWithDash = "-main.1";
         public static string PreReleaseLabel = "main";
         public static string PreReleaseNumber = "1";
-        public static string BuildMetaData = "6";
-        public static string BuildMetaDataPadded = "0006";
-        public static string FullBuildMetaData = "6.Branch.main.Sha.90028062a3d293699594ba55668dce90020c76a4";
+        public static string BuildMetaData = "9";
+        public static string BuildMetaDataPadded = "0009";
+        public static string FullBuildMetaData = "9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829";
         public static string MajorMinorPatch = "0.1.0";
         public static string SemVer = "0.1.0-main.1";
         public static string LegacySemVer = "0.1.0-main1";
         public static string LegacySemVerPadded = "0.1.0-main0001";
         public static string AssemblySemVer = "0.1.0.0";
-        public static string FullSemVer = "0.1.0-main.1+6";
-        public static string InformationalVersion = "0.1.0-main.1+6.Branch.main.Sha.90028062a3d293699594ba55668dce90020c76a4";
+        public static string FullSemVer = "0.1.0-main.1+9";
+        public static string InformationalVersion = "0.1.0-main.1+9.Branch.main.Sha.f5e781587587537ffb20ddbb6db43c30a6ce7829";
         public static string BranchName = "main";
-        public static string Sha = "90028062a3d293699594ba55668dce90020c76a4";
+        public static string Sha = "f5e781587587537ffb20ddbb6db43c30a6ce7829";
         public static string NuGetVersionV2 = "0.1.0-main0001";
         public static string NuGetVersion = "0.1.0-main0001";
-        public static string CommitsSinceVersionSource = "6";
-        public static string CommitsSinceVersionSourcePadded = "0006";
-        public static string CommitDate = "2020-11-09";
+        public static string CommitsSinceVersionSource = "9";
+        public static string CommitsSinceVersionSourcePadded = "0009";
+        public static string CommitDate = "2021-07-09";
     }
 
 }

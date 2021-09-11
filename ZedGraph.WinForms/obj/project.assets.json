@@ -2,10 +2,15 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v3.5": {
-      "GitVersionTask/3.6.5": {
+      "GitVersionTask/5.5.1": {
         "type": "package",
         "build": {
-          "build/portable-net+sl+win+wpa+wp/GitVersionTask.targets": {}
+          "build/GitVersionTask.props": {},
+          "build/GitVersionTask.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitVersionTask.props": {},
+          "buildMultiTargeting/GitVersionTask.targets": {}
         }
       },
       "ZedGraph/1.0.0": {
@@ -23,10 +28,15 @@
       }
     },
     ".NETFramework,Version=v4.0": {
-      "GitVersionTask/3.6.5": {
+      "GitVersionTask/5.5.1": {
         "type": "package",
         "build": {
-          "build/portable-net+sl+win+wpa+wp/GitVersionTask.targets": {}
+          "build/GitVersionTask.props": {},
+          "build/GitVersionTask.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitVersionTask.props": {},
+          "buildMultiTargeting/GitVersionTask.targets": {}
         }
       },
       "ZedGraph/1.0.0": {
@@ -44,10 +54,15 @@
       }
     },
     ".NETFramework,Version=v4.5": {
-      "GitVersionTask/3.6.5": {
+      "GitVersionTask/5.5.1": {
         "type": "package",
         "build": {
-          "build/dotnet/GitVersionTask.targets": {}
+          "build/GitVersionTask.props": {},
+          "build/GitVersionTask.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitVersionTask.props": {},
+          "buildMultiTargeting/GitVersionTask.targets": {}
         }
       },
       "ZedGraph/1.0.0": {
@@ -65,10 +80,15 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "GitVersionTask/3.6.5": {
+      "GitVersionTask/5.5.1": {
         "type": "package",
         "build": {
-          "build/dotnet/GitVersionTask.targets": {}
+          "build/GitVersionTask.props": {},
+          "build/GitVersionTask.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitVersionTask.props": {},
+          "buildMultiTargeting/GitVersionTask.targets": {}
         }
       },
       "ZedGraph/1.0.0": {
@@ -86,10 +106,15 @@
       }
     },
     ".NETFramework,Version=v4.7": {
-      "GitVersionTask/3.6.5": {
+      "GitVersionTask/5.5.1": {
         "type": "package",
         "build": {
-          "build/dotnet/GitVersionTask.targets": {}
+          "build/GitVersionTask.props": {},
+          "build/GitVersionTask.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/GitVersionTask.props": {},
+          "buildMultiTargeting/GitVersionTask.targets": {}
         }
       },
       "ZedGraph/1.0.0": {
@@ -108,26 +133,67 @@
     }
   },
   "libraries": {
-    "GitVersionTask/3.6.5": {
-      "sha512": "m8lI2IZzJFvDP9NYQ44xFTPV3gMn4LIXbY6izFuBpjNooxLmcT1HtG3E3aQE4Ch1YsvtscF8qUWyl2ISKY5YdA==",
+    "GitVersionTask/5.5.1": {
+      "sha512": "eU5PgmGGLh8qFEufW6Y+NxanA4Qp1mDGOIuM59jf/0XJrSSZSJ2RwLacKNTh3lufduaF3nv6PS47G6UUOxNOdQ==",
       "type": "package",
-      "path": "gitversiontask/3.6.5",
+      "path": "gitversiontask/5.5.1",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "GitVersionTask.dll",
-        "GitVersionTask.dll.config",
-        "GitVersionTask.pdb",
-        "build/dotnet/GitVersionTask.targets",
-        "build/portable-net+sl+win+wpa+wp/GitVersionTask.targets",
-        "gitversiontask.3.6.5.nupkg.sha512",
+        "build/GitVersionTask.props",
+        "build/GitVersionTask.targets",
+        "buildMultiTargeting/GitVersionTask.props",
+        "buildMultiTargeting/GitVersionTask.targets",
+        "gitversiontask.5.5.1.nupkg.sha512",
         "gitversiontask.nuspec",
-        "lib/linux/x86_64/libgit2-baa87df.so",
-        "lib/osx/libgit2-baa87df.dylib",
-        "lib/win32/x64/git2-baa87df.dll",
-        "lib/win32/x64/git2-baa87df.pdb",
-        "lib/win32/x86/git2-baa87df.dll",
-        "lib/win32/x86/git2-baa87df.pdb"
+        "package_icon.png",
+        "tools/net48/GitVersionCore.dll",
+        "tools/net48/GitVersionCore.pdb",
+        "tools/net48/GitVersionCore.xml",
+        "tools/net48/GitVersionTask.MsBuild.dll",
+        "tools/net48/GitVersionTask.MsBuild.pdb",
+        "tools/net48/GitVersionTask.dll",
+        "tools/net48/GitVersionTask.pdb",
+        "tools/net48/LibGit2Sharp.dll",
+        "tools/net48/LibGit2Sharp.dll.config",
+        "tools/net48/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/net48/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/net48/Microsoft.Extensions.DependencyInjection.dll",
+        "tools/net48/Microsoft.Extensions.Options.dll",
+        "tools/net48/Microsoft.Extensions.Primitives.dll",
+        "tools/net48/YamlDotNet.dll",
+        "tools/net48/lib/linux-x64/libgit2-ef5a385.so",
+        "tools/net48/lib/osx/libgit2-ef5a385.dylib",
+        "tools/net48/lib/win32/x64/git2-ef5a385.dll",
+        "tools/net48/lib/win32/x86/git2-ef5a385.dll",
+        "tools/netstandard2.0/GitVersionCore.dll",
+        "tools/netstandard2.0/GitVersionCore.pdb",
+        "tools/netstandard2.0/GitVersionCore.xml",
+        "tools/netstandard2.0/GitVersionTask.MsBuild.dll",
+        "tools/netstandard2.0/GitVersionTask.MsBuild.pdb",
+        "tools/netstandard2.0/GitVersionTask.deps.json",
+        "tools/netstandard2.0/GitVersionTask.dll",
+        "tools/netstandard2.0/GitVersionTask.pdb",
+        "tools/netstandard2.0/LibGit2Sharp.dll",
+        "tools/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "tools/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "tools/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "tools/netstandard2.0/YamlDotNet.dll",
+        "tools/netstandard2.0/runtimes/alpine-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/alpine.3.9-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/debian-arm64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/debian.9-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/fedora-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/linux-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/osx/native/libgit2-ef5a385.dylib",
+        "tools/netstandard2.0/runtimes/rhel-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/ubuntu.16.04-arm64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/ubuntu.18.04-x64/native/libgit2-ef5a385.so",
+        "tools/netstandard2.0/runtimes/win-x64/native/git2-ef5a385.dll",
+        "tools/netstandard2.0/runtimes/win-x86/native/git2-ef5a385.dll"
       ]
     },
     "ZedGraph/1.0.0": {
@@ -138,45 +204,41 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v3.5": [
-      "GitVersionTask >= 3.6.5",
+      "GitVersionTask >= 5.5.1",
       "ZedGraph >= 1.0.0"
     ],
     ".NETFramework,Version=v4.0": [
-      "GitVersionTask >= 3.6.5",
+      "GitVersionTask >= 5.5.1",
       "ZedGraph >= 1.0.0"
     ],
     ".NETFramework,Version=v4.5": [
-      "GitVersionTask >= 3.6.5",
+      "GitVersionTask >= 5.5.1",
       "ZedGraph >= 1.0.0"
     ],
     ".NETFramework,Version=v4.6": [
-      "GitVersionTask >= 3.6.5",
+      "GitVersionTask >= 5.5.1",
       "ZedGraph >= 1.0.0"
     ],
     ".NETFramework,Version=v4.7": [
-      "GitVersionTask >= 3.6.5",
+      "GitVersionTask >= 5.5.1",
       "ZedGraph >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jay\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jayes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\StockExchange\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
+      "projectUniqueName": "D:\\Projects\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
       "projectName": "ZedGraph.WinForms",
-      "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
-      "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
-      "outputPath": "E:\\StockExchange\\Scarp\\ZedGraph.WinForms\\obj\\",
+      "projectPath": "D:\\Projects\\Scarp\\ZedGraph.WinForms\\ZedGraph.WinForms.csproj",
+      "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Scarp\\ZedGraph.WinForms\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -188,41 +250,46 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net35": {
+          "targetAlias": "net35",
           "projectReferences": {
-            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         },
         "net40": {
+          "targetAlias": "net40",
           "projectReferences": {
-            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         },
         "net45": {
+          "targetAlias": "net45",
           "projectReferences": {
-            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         },
         "net46": {
+          "targetAlias": "net46",
           "projectReferences": {
-            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         },
         "net47": {
+          "targetAlias": "net47",
           "projectReferences": {
-            "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj"
+            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
+              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
             }
           }
         }
@@ -235,49 +302,64 @@
     },
     "frameworks": {
       "net35": {
+        "targetAlias": "net35",
         "dependencies": {
           "GitVersionTask": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.5, )"
+            "version": "[5.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       },
       "net40": {
+        "targetAlias": "net40",
         "dependencies": {
           "GitVersionTask": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.5, )"
+            "version": "[5.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       },
       "net45": {
+        "targetAlias": "net45",
         "dependencies": {
           "GitVersionTask": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.5, )"
+            "version": "[5.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       },
       "net46": {
+        "targetAlias": "net46",
         "dependencies": {
           "GitVersionTask": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.5, )"
+            "version": "[5.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       },
       "net47": {
+        "targetAlias": "net47",
         "dependencies": {
           "GitVersionTask": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.5, )"
+            "version": "[5.5.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qf3KTsKNYjFTuzMa6SNcAa9bN7M8IHE0fpfDHZlkm0GiB259aHcLVQ8tXzAIVk1iX9DYS7ptGU+DV5R4tHoI4A==",
+  "dgSpecHash": "nqvjKH3dTSU06Mj2PbdUyiAviDypAYpnKu/rmtHz8KkXLsAgI6vWf0FgMgvj0mtb/hd1nU/Wa90+7brTnVbf8g==",
   "success": true,
-  "projectFilePath": "E:\\StockExchange\\Scarp\\ZedGraph\\ZedGraph.csproj",
+  "projectFilePath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jay\\.nuget\\packages\\gitversiontask\\3.6.5\\gitversiontask.3.6.5.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
+    "C:\\Users\\jayes\\.nuget\\packages\\gitversiontask\\3.6.5\\gitversiontask.3.6.5.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jayes\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
   ],
   "logs": [
     {

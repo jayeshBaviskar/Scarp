@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj": {}
+    "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj": {}
   },
   "projects": {
-    "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj": {
+    "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj",
+        "projectUniqueName": "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj",
         "projectName": "ScarpLib",
-        "projectPath": "D:\\Git\\Scarp\\ScarpLib\\ScarpLib.csproj",
-        "packagesPath": "C:\\Users\\jbaviskar\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\Scarp\\ScarpLib\\obj\\",
+        "projectPath": "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj",
+        "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Scarp\\ScarpLib\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Programs\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jbaviskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
-                "projectPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
+              "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+                "projectPath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
               }
             }
           }
@@ -73,18 +77,22 @@
         }
       }
     },
-    "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
+    "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "projectUniqueName": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
         "projectName": "YahooFinanceApi2",
-        "projectPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
-        "packagesPath": "C:\\Users\\jbaviskar\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\Scarp\\YahooFinanceApi2\\obj\\",
+        "projectPath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj",
+        "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Programs\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jbaviskar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

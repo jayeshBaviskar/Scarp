@@ -5,14 +5,47 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Jay\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\jayes\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+    <SourceRoot Include="C:\Users\jayes\.nuget\packages\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\buildMultiTargeting\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\buildMultiTargeting\GitVersionTask.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net35' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net40' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net45' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net46' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net47' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props" Condition="Exists('$(NuGetPackageRoot)gitversiontask\5.5.1\build\GitVersionTask.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net35' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGitVersionTask Condition=" '$(PkgGitVersionTask)' == '' ">C:\Users\jayes\.nuget\packages\gitversiontask\5.5.1</PkgGitVersionTask>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net40' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGitVersionTask Condition=" '$(PkgGitVersionTask)' == '' ">C:\Users\jayes\.nuget\packages\gitversiontask\5.5.1</PkgGitVersionTask>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net45' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGitVersionTask Condition=" '$(PkgGitVersionTask)' == '' ">C:\Users\jayes\.nuget\packages\gitversiontask\5.5.1</PkgGitVersionTask>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net46' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGitVersionTask Condition=" '$(PkgGitVersionTask)' == '' ">C:\Users\jayes\.nuget\packages\gitversiontask\5.5.1</PkgGitVersionTask>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net47' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgGitVersionTask Condition=" '$(PkgGitVersionTask)' == '' ">C:\Users\jayes\.nuget\packages\gitversiontask\5.5.1</PkgGitVersionTask>
   </PropertyGroup>
 </Project>
