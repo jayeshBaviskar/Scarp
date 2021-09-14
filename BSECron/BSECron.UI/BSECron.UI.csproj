@@ -164,11 +164,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ComboBoxDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CustomChartCombo\LineSeries_and_ColumnStack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomChartCombo\LineSeries_and_ColumnStack.Designer.cs">
+      <DependentUpon>LineSeries_and_ColumnStack.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomCharts\LineSeriesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomCharts\LineSeriesForm.Designer.cs">
       <DependentUpon>LineSeriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCharts\StackColumnBarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomCharts\StackColumnBarForm.Designer.cs">
+      <DependentUpon>StackColumnBarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -185,8 +197,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomChartCombo\LineSeries_and_ColumnStack.resx">
+      <DependentUpon>LineSeries_and_ColumnStack.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomCharts\LineSeriesForm.resx">
       <DependentUpon>LineSeriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCharts\StackColumnBarForm.resx">
+      <DependentUpon>StackColumnBarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

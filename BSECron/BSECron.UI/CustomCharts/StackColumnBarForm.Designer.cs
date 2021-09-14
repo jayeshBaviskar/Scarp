@@ -1,9 +1,7 @@
 ﻿
-using LiveCharts.WinForms;
-
 namespace BSECron.UI.CustomCharts
 {
-    partial class LineSeriesForm
+    partial class StackColumnBarForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,36 +29,36 @@ namespace BSECron.UI.CustomCharts
         /// </summary>
         private void InitializeComponent()
         {
-            this.elementHost2 = new System.Windows.Forms.Integration.ElementHost();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.cartesianChart1 = new LiveCharts.Wpf.CartesianChart();
             this.SuspendLayout();
             // 
-            // elementHost2
+            // elementHost1
             // 
-            this.elementHost2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.elementHost2.Location = new System.Drawing.Point(0, 0);
-            this.elementHost2.Name = "elementHost2";
-            this.elementHost2.Size = new System.Drawing.Size(1924, 861);
-            this.elementHost2.TabIndex = 0;
-            this.elementHost2.Text = "elementHost2";
-            this.elementHost2.Child = this.cartesianChart1;
+            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.elementHost1.Location = new System.Drawing.Point(0, 0);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(1044, 681);
+            this.elementHost1.TabIndex = 0;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = this.cartesianChart1;
             // 
-            // LineSeriesForm
+            // StackColumnBarForm
             // 
-            this.ClientSize = new System.Drawing.Size(1924, 861);
-            this.Controls.Add(this.elementHost2);
-            this.Name = "LineSeriesForm";
-            this.Load += new System.EventHandler(this.LineSeriesForm_Load_1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1044, 681);
+            this.Controls.Add(this.elementHost1);
+            this.Name = "StackColumnBarForm";
+            this.Text = "StackColumnBarForm";
+            this.Load += new System.EventHandler(this.StackColumnBarForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-
-      
         private System.Windows.Forms.Integration.ElementHost elementHost1;
-        private System.Windows.Forms.Integration.ElementHost elementHost2;
         private LiveCharts.Wpf.CartesianChart cartesianChart1;
     }
 }
