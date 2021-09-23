@@ -19,31 +19,6 @@
           "lib/net47/CsvHelper.dll": {}
         }
       },
-      "Flurl/2.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Flurl.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Flurl.dll": {}
-        }
-      },
-      "Flurl.Http/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Flurl": "2.5.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/Flurl.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Flurl.Http.dll": {}
-        }
-      },
       "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
@@ -99,12 +74,6 @@
           }
         }
       },
-      "GitVersionTask/3.6.5": {
-        "type": "package",
-        "build": {
-          "build/dotnet/_._": {}
-        }
-      },
       "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
@@ -152,15 +121,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "Newtonsoft.Json/10.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "ScrapySharp/3.0.0": {
@@ -266,19 +226,6 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.Serialization",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -305,53 +252,6 @@
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
         }
-      },
-      "ScarpLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "HtmlAgilityPack": "1.11.26",
-          "Microsoft.CSharp": "4.7.0",
-          "ScrapySharp": "2.5.0",
-          "System.ValueTuple": "4.5.0",
-          "YahooFinanceApi2": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScarpLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScarpLib.dll": {}
-        }
-      },
-      "YahooFinanceApi2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "Flurl": "2.5.0",
-          "Flurl.Http": "2.0.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
-        },
-        "compile": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        }
-      },
-      "ZedGraph/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "dependencies": {
-          "GitVersionTask": "3.6.5"
-        },
-        "compile": {
-          "bin/placeholder/ZedGraph.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ZedGraph.dll": {}
-        }
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
@@ -370,31 +270,6 @@
         },
         "runtime": {
           "lib/net47/CsvHelper.dll": {}
-        }
-      },
-      "Flurl/2.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Flurl.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Flurl.dll": {}
-        }
-      },
-      "Flurl.Http/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Flurl": "2.5.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/Flurl.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Flurl.Http.dll": {}
         }
       },
       "FSharp.Core/4.5.2": {
@@ -452,12 +327,6 @@
           }
         }
       },
-      "GitVersionTask/3.6.5": {
-        "type": "package",
-        "build": {
-          "build/dotnet/_._": {}
-        }
-      },
       "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
@@ -505,15 +374,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "Newtonsoft.Json/10.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "ScrapySharp/3.0.0": {
@@ -613,19 +473,6 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.Serialization",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -651,53 +498,6 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
-        }
-      },
-      "ScarpLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "HtmlAgilityPack": "1.11.26",
-          "Microsoft.CSharp": "4.7.0",
-          "ScrapySharp": "2.5.0",
-          "System.ValueTuple": "4.5.0",
-          "YahooFinanceApi2": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScarpLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScarpLib.dll": {}
-        }
-      },
-      "YahooFinanceApi2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "Flurl": "2.5.0",
-          "Flurl.Http": "2.0.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
-        },
-        "compile": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        }
-      },
-      "ZedGraph/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "dependencies": {
-          "GitVersionTask": "3.6.5"
-        },
-        "compile": {
-          "bin/placeholder/ZedGraph.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     },
@@ -719,31 +519,6 @@
           "lib/net47/CsvHelper.dll": {}
         }
       },
-      "Flurl/2.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Flurl.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Flurl.dll": {}
-        }
-      },
-      "Flurl.Http/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Flurl": "2.5.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/Flurl.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Flurl.Http.dll": {}
-        }
-      },
       "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
@@ -799,12 +574,6 @@
           }
         }
       },
-      "GitVersionTask/3.6.5": {
-        "type": "package",
-        "build": {
-          "build/dotnet/_._": {}
-        }
-      },
       "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
@@ -852,15 +621,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "Newtonsoft.Json/10.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "ScrapySharp/3.0.0": {
@@ -960,19 +720,6 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.Serialization",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -998,53 +745,6 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
-        }
-      },
-      "ScarpLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "HtmlAgilityPack": "1.11.26",
-          "Microsoft.CSharp": "4.7.0",
-          "ScrapySharp": "2.5.0",
-          "System.ValueTuple": "4.5.0",
-          "YahooFinanceApi2": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScarpLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScarpLib.dll": {}
-        }
-      },
-      "YahooFinanceApi2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "Flurl": "2.5.0",
-          "Flurl.Http": "2.0.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
-        },
-        "compile": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        }
-      },
-      "ZedGraph/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "dependencies": {
-          "GitVersionTask": "3.6.5"
-        },
-        "compile": {
-          "bin/placeholder/ZedGraph.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     },
@@ -1066,31 +766,6 @@
           "lib/net47/CsvHelper.dll": {}
         }
       },
-      "Flurl/2.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Flurl.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Flurl.dll": {}
-        }
-      },
-      "Flurl.Http/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Flurl": "2.5.0",
-          "Newtonsoft.Json": "10.0.3"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net45/Flurl.Http.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Flurl.Http.dll": {}
-        }
-      },
       "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
@@ -1146,12 +821,6 @@
           }
         }
       },
-      "GitVersionTask/3.6.5": {
-        "type": "package",
-        "build": {
-          "build/dotnet/_._": {}
-        }
-      },
       "HtmlAgilityPack/1.11.36": {
         "type": "package",
         "compile": {
@@ -1199,15 +868,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "Newtonsoft.Json/10.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "ScrapySharp/3.0.0": {
@@ -1307,19 +967,6 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime.Serialization",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -1345,53 +992,6 @@
         },
         "runtime": {
           "lib/net47/System.ValueTuple.dll": {}
-        }
-      },
-      "ScarpLib/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "HtmlAgilityPack": "1.11.26",
-          "Microsoft.CSharp": "4.7.0",
-          "ScrapySharp": "2.5.0",
-          "System.ValueTuple": "4.5.0",
-          "YahooFinanceApi2": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScarpLib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScarpLib.dll": {}
-        }
-      },
-      "YahooFinanceApi2/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.6.1",
-        "dependencies": {
-          "CsvHelper": "15.0.9",
-          "Flurl": "2.5.0",
-          "Flurl.Http": "2.0.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
-        },
-        "compile": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/YahooFinanceApi2.dll": {}
-        }
-      },
-      "ZedGraph/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.7",
-        "dependencies": {
-          "GitVersionTask": "3.6.5"
-        },
-        "compile": {
-          "bin/placeholder/ZedGraph.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ZedGraph.dll": {}
         }
       }
     }
@@ -1417,40 +1017,6 @@
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
-      ]
-    },
-    "Flurl/2.5.0": {
-      "sha512": "unjYjZ8eGeTwTgKt1UI5Nk5S65+3FkrnzNIiLqTr8LvIdS6mJtP8Lf1x0P5/whQb9b90QOyqLtJWTwjTu0HeOA==",
-      "type": "package",
-      "path": "flurl/2.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "flurl.2.5.0.nupkg.sha512",
-        "flurl.nuspec",
-        "lib/net40/Flurl.dll",
-        "lib/net40/Flurl.xml",
-        "lib/netstandard1.0/Flurl.dll",
-        "lib/netstandard1.0/Flurl.xml",
-        "lib/netstandard1.3/Flurl.dll",
-        "lib/netstandard1.3/Flurl.xml"
-      ]
-    },
-    "Flurl.Http/2.0.0": {
-      "sha512": "kpZdFIx95Em7z7iGzfiwE+SQYlnYVvCnNqiX0NKV3yWjPw9HoyOXnRky9oBA/eZMy0VOWUonc/DAdz76rVXenA==",
-      "type": "package",
-      "path": "flurl.http/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "flurl.http.2.0.0.nupkg.sha512",
-        "flurl.http.nuspec",
-        "lib/net45/Flurl.Http.dll",
-        "lib/net45/Flurl.Http.xml",
-        "lib/netstandard1.1/Flurl.Http.dll",
-        "lib/netstandard1.1/Flurl.Http.xml",
-        "lib/netstandard1.3/Flurl.Http.dll",
-        "lib/netstandard1.3/Flurl.Http.xml"
       ]
     },
     "FSharp.Core/4.5.2": {
@@ -1499,28 +1065,6 @@
         "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
         "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
-      ]
-    },
-    "GitVersionTask/3.6.5": {
-      "sha512": "m8lI2IZzJFvDP9NYQ44xFTPV3gMn4LIXbY6izFuBpjNooxLmcT1HtG3E3aQE4Ch1YsvtscF8qUWyl2ISKY5YdA==",
-      "type": "package",
-      "path": "gitversiontask/3.6.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "GitVersionTask.dll",
-        "GitVersionTask.dll.config",
-        "GitVersionTask.pdb",
-        "build/dotnet/GitVersionTask.targets",
-        "build/portable-net+sl+win+wpa+wp/GitVersionTask.targets",
-        "gitversiontask.3.6.5.nupkg.sha512",
-        "gitversiontask.nuspec",
-        "lib/linux/x86_64/libgit2-baa87df.so",
-        "lib/osx/libgit2-baa87df.dylib",
-        "lib/win32/x64/git2-baa87df.dll",
-        "lib/win32/x64/git2-baa87df.pdb",
-        "lib/win32/x86/git2-baa87df.dll",
-        "lib/win32/x86/git2-baa87df.pdb"
       ]
     },
     "HtmlAgilityPack/1.11.36": {
@@ -1688,36 +1232,6 @@
         "ref/xamarinwatchos10/_._",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
-      "type": "package",
-      "path": "newtonsoft.json/10.0.3",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "tools/install.ps1"
       ]
     },
     "ScrapySharp/3.0.0": {
@@ -1938,79 +1452,6 @@
         "version.txt"
       ]
     },
-    "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
-      "type": "package",
-      "path": "system.runtime.serialization.primitives/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net46/System.Runtime.Serialization.Primitives.dll",
-        "lib/netcore50/System.Runtime.Serialization.Primitives.dll",
-        "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net46/System.Runtime.Serialization.Primitives.dll",
-        "ref/netcore50/System.Runtime.Serialization.Primitives.dll",
-        "ref/netcore50/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
-        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
-        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll",
-        "system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
-        "system.runtime.serialization.primitives.nuspec"
-      ]
-    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "type": "package",
@@ -2091,21 +1532,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "ScarpLib/1.0.0": {
-      "type": "project",
-      "path": "../ScarpLib/ScarpLib.csproj",
-      "msbuildProject": "../ScarpLib/ScarpLib.csproj"
-    },
-    "YahooFinanceApi2/1.0.0": {
-      "type": "project",
-      "path": "../YahooFinanceApi2/YahooFinanceApi2.csproj",
-      "msbuildProject": "../YahooFinanceApi2/YahooFinanceApi2.csproj"
-    },
-    "ZedGraph/1.0.0": {
-      "type": "project",
-      "path": "../ZedGraph/ZedGraph.csproj",
-      "msbuildProject": "../ZedGraph/ZedGraph.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2113,12 +1539,9 @@
       "CsvHelper >= 27.1.1",
       "HtmlAgilityPack >= 1.11.36",
       "Microsoft.CSharp >= 4.7.0",
-      "ScarpLib >= 1.0.0",
       "ScrapySharp >= 3.0.0",
       "System.Drawing.Common >= 5.0.2",
-      "System.ValueTuple >= 4.5.0",
-      "YahooFinanceApi2 >= 1.0.0",
-      "ZedGraph >= 1.0.0"
+      "System.ValueTuple >= 4.5.0"
     ]
   },
   "packageFolders": {
@@ -2152,17 +1575,7 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {
-            "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj": {
-              "projectPath": "D:\\Projects\\Scarp\\ScarpLib\\ScarpLib.csproj"
-            },
-            "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj": {
-              "projectPath": "D:\\Projects\\Scarp\\YahooFinanceApi2\\YahooFinanceApi2.csproj"
-            },
-            "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj": {
-              "projectPath": "D:\\Projects\\Scarp\\ZedGraph\\ZedGraph.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       }
     },

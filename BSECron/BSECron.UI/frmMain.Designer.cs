@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dateToPicker = new System.Windows.Forms.DateTimePicker();
             this.lblToDate = new System.Windows.Forms.Label();
             this.dateFromPicker = new System.Windows.Forms.DateTimePicker();
@@ -57,7 +57,7 @@
             this.trckGraphDuration = new System.Windows.Forms.TrackBar();
             this.btnMarginStocks = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdBseData)).BeginInit();
             this.grpBoxTopFilters.SuspendLayout();
             this.grpBoxOperations.SuspendLayout();
@@ -69,46 +69,46 @@
             // 
             // dateToPicker
             // 
-            this.dateToPicker.Location = new System.Drawing.Point(156, 102);
-            this.dateToPicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateToPicker.Location = new System.Drawing.Point(104, 65);
+            this.dateToPicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateToPicker.Name = "dateToPicker";
-            this.dateToPicker.Size = new System.Drawing.Size(396, 31);
+            this.dateToPicker.Size = new System.Drawing.Size(265, 22);
             this.dateToPicker.TabIndex = 6;
             // 
             // lblToDate
             // 
             this.lblToDate.AutoSize = true;
-            this.lblToDate.Location = new System.Drawing.Point(8, 108);
-            this.lblToDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblToDate.Location = new System.Drawing.Point(5, 69);
+            this.lblToDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblToDate.Name = "lblToDate";
-            this.lblToDate.Size = new System.Drawing.Size(88, 25);
+            this.lblToDate.Size = new System.Drawing.Size(59, 17);
             this.lblToDate.TabIndex = 7;
             this.lblToDate.Text = "To Date";
             // 
             // dateFromPicker
             // 
-            this.dateFromPicker.Location = new System.Drawing.Point(156, 36);
-            this.dateFromPicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateFromPicker.Location = new System.Drawing.Point(104, 23);
+            this.dateFromPicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateFromPicker.Name = "dateFromPicker";
-            this.dateFromPicker.Size = new System.Drawing.Size(396, 31);
+            this.dateFromPicker.Size = new System.Drawing.Size(265, 22);
             this.dateFromPicker.TabIndex = 5;
             // 
             // lblFromDate
             // 
             this.lblFromDate.AutoSize = true;
-            this.lblFromDate.Location = new System.Drawing.Point(8, 42);
-            this.lblFromDate.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblFromDate.Location = new System.Drawing.Point(5, 27);
+            this.lblFromDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFromDate.Name = "lblFromDate";
-            this.lblFromDate.Size = new System.Drawing.Size(112, 25);
+            this.lblFromDate.Size = new System.Drawing.Size(74, 17);
             this.lblFromDate.TabIndex = 8;
             this.lblFromDate.Text = "From Date";
             // 
             // btnDownloadBSEData
             // 
-            this.btnDownloadBSEData.Location = new System.Drawing.Point(12, 36);
-            this.btnDownloadBSEData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDownloadBSEData.Location = new System.Drawing.Point(8, 23);
+            this.btnDownloadBSEData.Margin = new System.Windows.Forms.Padding(4);
             this.btnDownloadBSEData.Name = "btnDownloadBSEData";
-            this.btnDownloadBSEData.Size = new System.Drawing.Size(232, 103);
+            this.btnDownloadBSEData.Size = new System.Drawing.Size(155, 66);
             this.btnDownloadBSEData.TabIndex = 10;
             this.btnDownloadBSEData.Text = "Download BSE Data";
             this.btnDownloadBSEData.UseVisualStyleBackColor = true;
@@ -116,10 +116,10 @@
             // 
             // btnSaveToDB
             // 
-            this.btnSaveToDB.Location = new System.Drawing.Point(256, 36);
-            this.btnSaveToDB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSaveToDB.Location = new System.Drawing.Point(171, 23);
+            this.btnSaveToDB.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveToDB.Name = "btnSaveToDB";
-            this.btnSaveToDB.Size = new System.Drawing.Size(232, 103);
+            this.btnSaveToDB.Size = new System.Drawing.Size(155, 66);
             this.btnSaveToDB.TabIndex = 11;
             this.btnSaveToDB.Text = "Save To DB";
             this.btnSaveToDB.UseVisualStyleBackColor = true;
@@ -129,30 +129,36 @@
             // 
             this.lblNotify.AutoSize = true;
             this.lblNotify.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotify.Location = new System.Drawing.Point(18, 1350);
-            this.lblNotify.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblNotify.Location = new System.Drawing.Point(12, 864);
+            this.lblNotify.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNotify.Name = "lblNotify";
-            this.lblNotify.Size = new System.Drawing.Size(179, 36);
+            this.lblNotify.Size = new System.Drawing.Size(110, 24);
             this.lblNotify.TabIndex = 12;
             this.lblNotify.Text = "Notifications";
             // 
             // grdBseData
             // 
             this.grdBseData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBseData.Location = new System.Drawing.Point(24, 227);
-            this.grdBseData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grdBseData.Location = new System.Drawing.Point(16, 145);
+            this.grdBseData.Margin = new System.Windows.Forms.Padding(4);
+            this.grdBseData.MultiSelect = false;
             this.grdBseData.Name = "grdBseData";
+            this.grdBseData.ReadOnly = true;
             this.grdBseData.RowHeadersWidth = 62;
-            this.grdBseData.Size = new System.Drawing.Size(3022, 575);
+            this.grdBseData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdBseData.Size = new System.Drawing.Size(2015, 368);
             this.grdBseData.TabIndex = 13;
             this.grdBseData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBseData_CellClick);
+            this.grdBseData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.grdBseData_DataBindingComplete);
+            this.grdBseData.SelectionChanged += new System.EventHandler(this.grdBseData_SelectionChanged);
+            this.grdBseData.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.grdBseData_KeyPress);
             // 
             // btnExportToExcel
             // 
-            this.btnExportToExcel.Location = new System.Drawing.Point(500, 36);
-            this.btnExportToExcel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnExportToExcel.Location = new System.Drawing.Point(333, 23);
+            this.btnExportToExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportToExcel.Name = "btnExportToExcel";
-            this.btnExportToExcel.Size = new System.Drawing.Size(232, 103);
+            this.btnExportToExcel.Size = new System.Drawing.Size(155, 66);
             this.btnExportToExcel.TabIndex = 14;
             this.btnExportToExcel.Text = "Export To Excel";
             this.btnExportToExcel.UseVisualStyleBackColor = true;
@@ -529,10 +535,10 @@
             "363",
             "364",
             "365"});
-            this.cmbBoxGainers.Location = new System.Drawing.Point(110, 42);
-            this.cmbBoxGainers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmbBoxGainers.Location = new System.Drawing.Point(73, 27);
+            this.cmbBoxGainers.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBoxGainers.Name = "cmbBoxGainers";
-            this.cmbBoxGainers.Size = new System.Drawing.Size(232, 33);
+            this.cmbBoxGainers.Size = new System.Drawing.Size(156, 24);
             this.cmbBoxGainers.TabIndex = 16;
             this.cmbBoxGainers.SelectedIndexChanged += new System.EventHandler(this.cmbBoxGainers_SelectedIndexChanged);
             // 
@@ -907,10 +913,10 @@
             "363",
             "364",
             "365"});
-            this.cmbBoxLosers.Location = new System.Drawing.Point(110, 108);
-            this.cmbBoxLosers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmbBoxLosers.Location = new System.Drawing.Point(73, 69);
+            this.cmbBoxLosers.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBoxLosers.Name = "cmbBoxLosers";
-            this.cmbBoxLosers.Size = new System.Drawing.Size(232, 33);
+            this.cmbBoxLosers.Size = new System.Drawing.Size(156, 24);
             this.cmbBoxLosers.TabIndex = 17;
             this.cmbBoxLosers.SelectedIndexChanged += new System.EventHandler(this.cmbBoxLosers_SelectedIndexChanged);
             // 
@@ -921,21 +927,21 @@
             this.grpBoxTopFilters.Controls.Add(this.lblTopGainers);
             this.grpBoxTopFilters.Controls.Add(this.cmbBoxGainers);
             this.grpBoxTopFilters.Controls.Add(this.cmbBoxLosers);
-            this.grpBoxTopFilters.Location = new System.Drawing.Point(1370, 23);
-            this.grpBoxTopFilters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxTopFilters.Location = new System.Drawing.Point(913, 15);
+            this.grpBoxTopFilters.Margin = new System.Windows.Forms.Padding(4);
             this.grpBoxTopFilters.Name = "grpBoxTopFilters";
-            this.grpBoxTopFilters.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.grpBoxTopFilters.Size = new System.Drawing.Size(524, 192);
+            this.grpBoxTopFilters.Padding = new System.Windows.Forms.Padding(4);
+            this.grpBoxTopFilters.Size = new System.Drawing.Size(349, 123);
             this.grpBoxTopFilters.TabIndex = 18;
             this.grpBoxTopFilters.TabStop = false;
             this.grpBoxTopFilters.Text = "TOP CONSISTENT";
             // 
             // btnAnalyzeLogic
             // 
-            this.btnAnalyzeLogic.Location = new System.Drawing.Point(376, 36);
-            this.btnAnalyzeLogic.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAnalyzeLogic.Location = new System.Drawing.Point(251, 23);
+            this.btnAnalyzeLogic.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnalyzeLogic.Name = "btnAnalyzeLogic";
-            this.btnAnalyzeLogic.Size = new System.Drawing.Size(126, 111);
+            this.btnAnalyzeLogic.Size = new System.Drawing.Size(84, 71);
             this.btnAnalyzeLogic.TabIndex = 20;
             this.btnAnalyzeLogic.Text = "Analyze";
             this.btnAnalyzeLogic.UseVisualStyleBackColor = true;
@@ -945,10 +951,10 @@
             // 
             this.lblLosers.AutoSize = true;
             this.lblLosers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLosers.Location = new System.Drawing.Point(12, 114);
-            this.lblLosers.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblLosers.Location = new System.Drawing.Point(8, 73);
+            this.lblLosers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLosers.Name = "lblLosers";
-            this.lblLosers.Size = new System.Drawing.Size(77, 26);
+            this.lblLosers.Size = new System.Drawing.Size(51, 17);
             this.lblLosers.TabIndex = 19;
             this.lblLosers.Text = "Losers";
             // 
@@ -956,10 +962,10 @@
             // 
             this.lblTopGainers.AutoSize = true;
             this.lblTopGainers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopGainers.Location = new System.Drawing.Point(12, 48);
-            this.lblTopGainers.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblTopGainers.Location = new System.Drawing.Point(8, 31);
+            this.lblTopGainers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTopGainers.Name = "lblTopGainers";
-            this.lblTopGainers.Size = new System.Drawing.Size(88, 26);
+            this.lblTopGainers.Size = new System.Drawing.Size(58, 17);
             this.lblTopGainers.TabIndex = 18;
             this.lblTopGainers.Text = "Gainers";
             // 
@@ -968,11 +974,11 @@
             this.grpBoxOperations.Controls.Add(this.btnDownloadBSEData);
             this.grpBoxOperations.Controls.Add(this.btnSaveToDB);
             this.grpBoxOperations.Controls.Add(this.btnExportToExcel);
-            this.grpBoxOperations.Location = new System.Drawing.Point(608, 23);
-            this.grpBoxOperations.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpBoxOperations.Location = new System.Drawing.Point(405, 15);
+            this.grpBoxOperations.Margin = new System.Windows.Forms.Padding(4);
             this.grpBoxOperations.Name = "grpBoxOperations";
-            this.grpBoxOperations.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.grpBoxOperations.Size = new System.Drawing.Size(750, 192);
+            this.grpBoxOperations.Padding = new System.Windows.Forms.Padding(4);
+            this.grpBoxOperations.Size = new System.Drawing.Size(500, 123);
             this.grpBoxOperations.TabIndex = 19;
             this.grpBoxOperations.TabStop = false;
             this.grpBoxOperations.Text = "OPERATIONS";
@@ -983,11 +989,11 @@
             this.grpDateSelectors.Controls.Add(this.lblFromDate);
             this.grpDateSelectors.Controls.Add(this.lblToDate);
             this.grpDateSelectors.Controls.Add(this.dateToPicker);
-            this.grpDateSelectors.Location = new System.Drawing.Point(22, 23);
-            this.grpDateSelectors.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpDateSelectors.Location = new System.Drawing.Point(15, 15);
+            this.grpDateSelectors.Margin = new System.Windows.Forms.Padding(4);
             this.grpDateSelectors.Name = "grpDateSelectors";
-            this.grpDateSelectors.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.grpDateSelectors.Size = new System.Drawing.Size(574, 192);
+            this.grpDateSelectors.Padding = new System.Windows.Forms.Padding(4);
+            this.grpDateSelectors.Size = new System.Drawing.Size(383, 123);
             this.grpDateSelectors.TabIndex = 20;
             this.grpDateSelectors.TabStop = false;
             this.grpDateSelectors.Text = "CHOOSE DATE";
@@ -997,21 +1003,21 @@
             this.grpSortOrder.Controls.Add(this.btnFilter);
             this.grpSortOrder.Controls.Add(this.txtFilter);
             this.grpSortOrder.Controls.Add(this.ddlSortColumns);
-            this.grpSortOrder.Location = new System.Drawing.Point(1926, 23);
-            this.grpSortOrder.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grpSortOrder.Location = new System.Drawing.Point(1284, 15);
+            this.grpSortOrder.Margin = new System.Windows.Forms.Padding(4);
             this.grpSortOrder.Name = "grpSortOrder";
-            this.grpSortOrder.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.grpSortOrder.Size = new System.Drawing.Size(400, 192);
+            this.grpSortOrder.Padding = new System.Windows.Forms.Padding(4);
+            this.grpSortOrder.Size = new System.Drawing.Size(267, 123);
             this.grpSortOrder.TabIndex = 21;
             this.grpSortOrder.TabStop = false;
             this.grpSortOrder.Text = "FILTER";
             // 
             // btnFilter
             // 
-            this.btnFilter.Location = new System.Drawing.Point(12, 136);
-            this.btnFilter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnFilter.Location = new System.Drawing.Point(8, 87);
+            this.btnFilter.Margin = new System.Windows.Forms.Padding(4);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(376, 44);
+            this.btnFilter.Size = new System.Drawing.Size(251, 28);
             this.btnFilter.TabIndex = 3;
             this.btnFilter.Text = "OK";
             this.btnFilter.UseVisualStyleBackColor = true;
@@ -1019,29 +1025,29 @@
             // 
             // txtFilter
             // 
-            this.txtFilter.Location = new System.Drawing.Point(12, 91);
-            this.txtFilter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtFilter.Location = new System.Drawing.Point(8, 58);
+            this.txtFilter.Margin = new System.Windows.Forms.Padding(4);
             this.txtFilter.Name = "txtFilter";
-            this.txtFilter.Size = new System.Drawing.Size(372, 31);
+            this.txtFilter.Size = new System.Drawing.Size(249, 22);
             this.txtFilter.TabIndex = 2;
             // 
             // ddlSortColumns
             // 
             this.ddlSortColumns.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ddlSortColumns.FormattingEnabled = true;
-            this.ddlSortColumns.Location = new System.Drawing.Point(12, 36);
-            this.ddlSortColumns.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ddlSortColumns.Location = new System.Drawing.Point(8, 23);
+            this.ddlSortColumns.Margin = new System.Windows.Forms.Padding(4);
             this.ddlSortColumns.Name = "ddlSortColumns";
-            this.ddlSortColumns.Size = new System.Drawing.Size(372, 33);
+            this.ddlSortColumns.Size = new System.Drawing.Size(249, 24);
             this.ddlSortColumns.TabIndex = 0;
             this.ddlSortColumns.SelectedIndexChanged += new System.EventHandler(this.ddlSortColumns_SelectedIndexChanged);
             // 
             // btnResetData
             // 
-            this.btnResetData.Location = new System.Drawing.Point(2896, 1341);
-            this.btnResetData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnResetData.Location = new System.Drawing.Point(1931, 858);
+            this.btnResetData.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetData.Name = "btnResetData";
-            this.btnResetData.Size = new System.Drawing.Size(150, 44);
+            this.btnResetData.Size = new System.Drawing.Size(100, 28);
             this.btnResetData.TabIndex = 4;
             this.btnResetData.Text = "RESET";
             this.btnResetData.UseVisualStyleBackColor = true;
@@ -1049,41 +1055,41 @@
             // 
             // chrtBseData
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chrtBseData.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chrtBseData.Legends.Add(legend1);
-            this.chrtBseData.Location = new System.Drawing.Point(22, 916);
-            this.chrtBseData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            chartArea9.Name = "ChartArea1";
+            this.chrtBseData.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chrtBseData.Legends.Add(legend9);
+            this.chrtBseData.Location = new System.Drawing.Point(15, 586);
+            this.chrtBseData.Margin = new System.Windows.Forms.Padding(4);
             this.chrtBseData.Name = "chrtBseData";
             this.chrtBseData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
-            series1.YValuesPerPoint = 6;
-            this.chrtBseData.Series.Add(series1);
-            this.chrtBseData.Size = new System.Drawing.Size(3024, 419);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series9.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            series9.YValuesPerPoint = 6;
+            this.chrtBseData.Series.Add(series9);
+            this.chrtBseData.Size = new System.Drawing.Size(2016, 268);
             this.chrtBseData.TabIndex = 22;
             this.chrtBseData.Text = "chart1";
             // 
             // trckGraphDuration
             // 
-            this.trckGraphDuration.Location = new System.Drawing.Point(24, 817);
-            this.trckGraphDuration.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trckGraphDuration.Location = new System.Drawing.Point(16, 523);
+            this.trckGraphDuration.Margin = new System.Windows.Forms.Padding(4);
             this.trckGraphDuration.Name = "trckGraphDuration";
-            this.trckGraphDuration.Size = new System.Drawing.Size(3022, 90);
+            this.trckGraphDuration.Size = new System.Drawing.Size(2015, 56);
             this.trckGraphDuration.TabIndex = 23;
             this.trckGraphDuration.Tag = "";
             this.trckGraphDuration.Scroll += new System.EventHandler(this.trckGraphDuration_Scroll);
             // 
             // btnMarginStocks
             // 
-            this.btnMarginStocks.Location = new System.Drawing.Point(2358, 47);
-            this.btnMarginStocks.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnMarginStocks.Location = new System.Drawing.Point(1572, 30);
+            this.btnMarginStocks.Margin = new System.Windows.Forms.Padding(4);
             this.btnMarginStocks.Name = "btnMarginStocks";
-            this.btnMarginStocks.Size = new System.Drawing.Size(150, 44);
+            this.btnMarginStocks.Size = new System.Drawing.Size(100, 28);
             this.btnMarginStocks.TabIndex = 24;
             this.btnMarginStocks.Text = "Margin Stocks";
             this.btnMarginStocks.UseVisualStyleBackColor = true;
@@ -1091,31 +1097,31 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(2826, 19);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(1572, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 84);
+            this.button1.Size = new System.Drawing.Size(100, 54);
             this.button1.TabIndex = 25;
             this.button1.Text = "Indicators";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // checkBox1
             // 
-            this.button2.Location = new System.Drawing.Point(2636, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 56);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(1706, 30);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(85, 21);
+            this.checkBox1.TabIndex = 26;
+            this.checkBox1.Text = "Highlight";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3058, 1402);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1924, 732);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMarginStocks);
             this.Controls.Add(this.trckGraphDuration);
@@ -1128,9 +1134,10 @@
             this.Controls.Add(this.grdBseData);
             this.Controls.Add(this.lblNotify);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "BSECron";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdBseData)).EndInit();
             this.grpBoxTopFilters.ResumeLayout(false);
@@ -1174,7 +1181,7 @@
         private System.Windows.Forms.TrackBar trckGraphDuration;
         private System.Windows.Forms.Button btnMarginStocks;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

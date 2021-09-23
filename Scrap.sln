@@ -20,6 +20,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{73E7207E-DCCC-49C8-B005-23D500301348}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BSECron", "BSECron", "{CADAC4F4-06FA-4DA4-8824-D2219AAAC82C}"
+	ProjectSection(SolutionItems) = preProject
+		Roadmap_&_Progress.xlsx = Roadmap_&_Progress.xlsx
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BSECron.Application", "BSECron\BSECron.Application\BSECron.Application.csproj", "{A8FE8FDD-2EB8-4C23-BE18-60A818F1842B}"
 EndProject

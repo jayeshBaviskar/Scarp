@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BSECron.Application;
 using BSECron.Common;
-
+using BSECron.DataAccess;
 
 namespace BSECron.UI
 {
     public partial class frmMain : Form
     {
+        Indicators_Home indicators = new Indicators_Home();
+        int selectedRowInGrdBseDataGridView = 0;
         DataTable dtBseDataCache;
 
         DateTime dtFromDateCache;
@@ -23,6 +25,7 @@ namespace BSECron.UI
         DateTime dtToDateCache;
 
         string graphScripName;
+        SharedClass sharedClass = new SharedClass();
 
         public frmMain()
         {
@@ -40,6 +43,10 @@ namespace BSECron.UI
             BSECommands cmd = new BSECommands();
 
             graphScripName = default(string);
+            
+            dateToPicker.Value = SharedClass.LastDateofDataAvailibility;
+            dateFromPicker.Value = SharedClass.LastDateofDataAvailibility.AddDays(-14); 
+       
         }
 
         private void btnDownloadBSEData_Click(object sender, EventArgs e)
@@ -62,15 +69,17 @@ namespace BSECron.UI
         {
             lblNotify.Text = "Saving BSE Data to Database";
 
-            DateTime fromDate = dateFromPicker.Value.Date;
-
-            DateTime toDate = dateToPicker.Value.Date;
-
             BSECommands bSECommands = new BSECommands();
-
+            BSEMSSQLDAL bSEMSSQLDAL = new BSEMSSQLDAL();
+            DateTime fromDate = dateFromPicker.Value.Date;
+            DateTime toDate = dateToPicker.Value.Date;
             bSECommands.ParseBseDataFromRangeToDatabase(fromDate, toDate);
 
             lblNotify.Text = "Completed Saving BSE Data to Database";
+
+            SharedClass.LastDateofDataAvailibility = bSEMSSQLDAL.GetMostRecentDateFromDB();
+            dateToPicker.Value = SharedClass.LastDateofDataAvailibility;
+
         }
 
         private void btnExportToExcel_Click(object sender, EventArgs e)
@@ -270,7 +279,7 @@ namespace BSECron.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Indicators_Home indicators = new Indicators_Home();
+           
             indicators.ShowDialog();
         }
 
@@ -279,6 +288,75 @@ namespace BSECron.UI
             BSECron.UI.CustomCharts.LineSeriesForm frm = new CustomCharts.LineSeriesForm();
             frm.ShowDialog();
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                HighlightDataInGrid();
+            }
+            else
+            {
+                RemoveHighlightingDataInGrid();
+            }
+        }
+
+        private void HighlightDataInGrid()
+        {
+
+        }
+
+        private void RemoveHighlightingDataInGrid()
+        {
+
+        }
+
+        private void grdBseData_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            foreach (DataGridViewRow row in grdBseData.Rows)
+            {
+                for(int col=9; col< row.Cells.Count; col++)
+                {
+                    if (Convert.ToDouble(row.Cells[col].Value) > 0)
+                    {
+                        row.Cells[col].Style.BackColor = Color.LightGreen;
+                    }
+                    else
+                    {
+
+                        row.Cells[col].Style.BackColor  = Color.Red;
+                    }
+                }
+               
+            }
+        }
+
+        private void grdBseData_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+            if(e.KeyChar == 'i')
+            {
+                if (grdBseData.SelectedRows.Count > 0)
+                {
+                   // MessageBox.Show(grdBseData.SelectedRows[0].Cells[1].Value.ToString());
+                    SharedClass.SelectedStockInGrid = grdBseData.SelectedRows[0].Cells[1].Value.ToString();
+
+                    indicators = new Indicators_Home();
+                    indicators.Show();
+                }
+
+                
+            }
+        }
+
+        
+        private void grdBseData_SelectionChanged(object sender, EventArgs e)
+        {
+            if (this.grdBseData.SelectedRows.Count > 0)
+            {
+                selectedRowInGrdBseDataGridView  = grdBseData.SelectedRows[0].Index;
+            }
         }
     }
 }

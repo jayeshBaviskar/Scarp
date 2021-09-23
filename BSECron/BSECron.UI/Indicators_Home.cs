@@ -29,13 +29,14 @@ namespace BSECron.UI
             }
 
             dateFromPicker.Value = new DateTime(2021, 01, 01);
-            dateToPicker.Value = bSEMSSQLDAL.GetMostRecentDateFromDB();
+            dateToPicker.Value = SharedClass.LastDateofDataAvailibility; // bSEMSSQLDAL.GetMostRecentDateFromDB();
+            comboBox1.Text = SharedClass.SelectedStockInGrid;
 
-            foreach (var item in ViewModelsSamples.Index.Samples)
-            {
-                _ = listBox1.Items.Add(item);
-            }
-        }
+    //foreach (var item in ViewModelsSamples.Index.Samples)
+    //{
+    //    _ = listBox1.Items.Add(item);
+    //}
+}
 
         private IEnumerable<Quote> quotes = null;
 

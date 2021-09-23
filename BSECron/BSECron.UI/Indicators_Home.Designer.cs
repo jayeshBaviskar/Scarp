@@ -38,6 +38,7 @@ namespace BSECron.UI
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -55,8 +56,6 @@ namespace BSECron.UI
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
@@ -161,6 +160,16 @@ namespace BSECron.UI
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Elder-ray Index";
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(351, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(258, 43);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Back Testing";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -335,26 +344,6 @@ namespace BSECron.UI
             this.label1.TabIndex = 8;
             this.label1.Text = "SYMBOL NAME";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(3, 147);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(323, 612);
-            this.listBox1.TabIndex = 23;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(351, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(258, 43);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Test";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
@@ -374,7 +363,6 @@ namespace BSECron.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1283, 675);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpDateSelectors);
             this.Controls.Add(this.tabControl1);
@@ -420,7 +408,6 @@ namespace BSECron.UI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button button3;
