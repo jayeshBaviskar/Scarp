@@ -33,7 +33,8 @@ namespace BSECron.UI
         }
 
         private void frmMain_Load(object sender, EventArgs e)
-        {
+        {   
+        
             dtBseDataCache = default(DataTable);
 
             dtFromDateCache = default(DateTime);

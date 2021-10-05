@@ -79,10 +79,10 @@ namespace BSECron.UI
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Location = new System.Drawing.Point(329, 154);
+            this.tabControl1.Location = new System.Drawing.Point(12, 154);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1157, 118);
+            this.tabControl1.Size = new System.Drawing.Size(1259, 459);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -91,7 +91,7 @@ namespace BSECron.UI
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1149, 89);
+            this.tabPage1.Size = new System.Drawing.Size(1251, 430);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Price Trends";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@ namespace BSECron.UI
             this.tabControl2.Location = new System.Drawing.Point(3, 6);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1138, 79);
+            this.tabControl2.Size = new System.Drawing.Size(1242, 421);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage10
@@ -113,7 +113,7 @@ namespace BSECron.UI
             this.tabPage10.Location = new System.Drawing.Point(4, 25);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1130, 50);
+            this.tabPage10.Size = new System.Drawing.Size(1234, 392);
             this.tabPage10.TabIndex = 0;
             this.tabPage10.Text = "Aroon Oscillator";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@ namespace BSECron.UI
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1130, 50);
+            this.tabPage11.Size = new System.Drawing.Size(1137, 50);
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "Average Directional Index (ADX)";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@ namespace BSECron.UI
             this.tabPage12.Controls.Add(this.button3);
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1130, 50);
+            this.tabPage12.Size = new System.Drawing.Size(1137, 50);
             this.tabPage12.TabIndex = 2;
             this.tabPage12.Text = "Elder-ray Index";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -369,6 +369,7 @@ namespace BSECron.UI
             this.Name = "Indicators_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Indicators_Home";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Indicators_Home_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
